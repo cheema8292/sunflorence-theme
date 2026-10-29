@@ -1,0 +1,39 @@
+{
+ "label": "Product page",
+ "page": true,
+ "fields": [
+  { "key": "field_sf_product_t_top", "label": "Announcement bar", "type": "accordion" },
+  { "key": "field_sf_product_announce_text", "name": "announce_text", "label": "Text (empty = hidden)", "type": "text", "default_value": "SECURE CHECKOUT • 30-DAY RETURNS • 24/7 SUPPORT" },
+  { "key": "field_sf_product_announce_bg", "name": "announce_bg", "label": "Background", "type": "color_picker", "default_value": "#000000" },
+  { "key": "field_sf_product_announce_color", "name": "announce_color", "label": "Text colour", "type": "color_picker", "default_value": "#ffffff" },
+
+  { "key": "field_sf_product_t_info", "label": "Product info", "type": "accordion" },
+  { "key": "field_sf_product_intro_text", "name": "intro_text", "label": "Text under the price", "type": "wysiwyg", "tabs": "visual", "toolbar": "basic", "media_upload": 0, "default_value": "<p>Handpicked for quality and value. Secure checkout, tracked shipping and a 30-day return policy on every order.</p>" },
+  { "key": "field_sf_product_blocks_benefit", "name": "blocks_benefit", "label": "Benefits grid (4 items, empty = default texts)", "type": "repeater", "layout": "table", "max": 4, "button_label": "Add benefit",
+    "sub_fields": [ { "key": "field_sf_product_benefit_text", "name": "text", "label": "Text", "type": "text" } ] },
+  { "key": "field_sf_product_benefit_icon_bg", "name": "benefit_icon_bg", "label": "Benefit icon background", "type": "color_picker", "default_value": "#6e1f2f" },
+  { "key": "field_sf_product_benefit_icon_color", "name": "benefit_icon_color", "label": "Benefit icon colour", "type": "color_picker", "default_value": "#e2d5c6" },
+  { "key": "field_sf_product_btn_text", "name": "btn_text", "label": "Add to cart button text", "type": "text", "default_value": "Add To Cart" },
+  { "key": "field_sf_product_trust_text", "name": "trust_text", "label": "Text box under the button", "instructions": "Empty = links to the Returns and Shipping policy pages.", "type": "wysiwyg", "tabs": "visual", "toolbar": "basic", "media_upload": 0 },
+
+  { "key": "field_sf_product_t_tabs", "label": "Info tabs (the first tab is always the product description)", "type": "accordion" },
+  { "key": "field_sf_product_tab_shipping_title", "name": "tab_shipping_title", "label": "Tab 2 title", "type": "text", "default_value": "SHIPPING" },
+  { "key": "field_sf_product_tab_shipping", "name": "tab_shipping", "label": "Tab 2 text", "type": "wysiwyg", "tabs": "visual", "toolbar": "basic", "media_upload": 0, "default_value": "<p>✓ Every order ships with a <strong>tracking number</strong></p><p>✓ Shipping options and costs are shown at <strong>checkout</strong></p><p>✓ We ship to <strong>over 50 countries</strong> worldwide</p>" },
+  { "key": "field_sf_product_tab_returns_title", "name": "tab_returns_title", "label": "Tab 3 title", "type": "text", "default_value": "RETURNS" },
+  { "key": "field_sf_product_tab_returns", "name": "tab_returns", "label": "Tab 3 text", "type": "wysiwyg", "tabs": "visual", "toolbar": "basic", "media_upload": 0, "default_value": "<p>We offer a <strong>30-day return policy</strong> on all items. Products must be in their original condition with tags attached.</p>" },
+  { "key": "field_sf_product_tab_payment_title", "name": "tab_payment_title", "label": "Tab 4 title", "type": "text", "default_value": "PAYMENT & SUPPORT" },
+  { "key": "field_sf_product_tab_payment", "name": "tab_payment", "label": "Tab 4 text", "type": "wysiwyg", "tabs": "visual", "toolbar": "basic", "media_upload": 0, "default_value": "<p>✓ <strong>100% secure</strong> transactions</p><p>✓ All major credit cards, PayPal, Apple Pay and Google Pay</p><p>✓ <strong>24/7</strong> dedicated customer support</p>" },
+
+  { "key": "field_sf_product_t_below", "label": "Below the product", "type": "accordion" },
+  { "key": "field_sf_product_reviews_title", "name": "reviews_title", "label": "Reviews heading", "type": "text", "default_value": "Loved By Our" },
+  { "key": "field_sf_product_reviews_accent", "name": "reviews_accent", "label": "Reviews heading (accent word)", "type": "text", "default_value": "Customers." },
+  { "key": "field_sf_product_related_heading", "name": "related_heading", "label": "Related products heading", "type": "text", "default_value": "You May Also Like" },
+  { "key": "field_sf_product_related_link_text", "name": "related_link_text", "label": "Related products link text", "type": "text", "default_value": "View All Products" },
+  { "key": "field_sf_product_faq_heading", "name": "faq_heading", "label": "FAQ heading", "type": "text", "default_value": "Frequently Asked Questions" },
+  { "key": "field_sf_product_blocks_faq", "name": "blocks_faq", "label": "FAQ (empty = default questions)", "type": "repeater", "layout": "block", "button_label": "Add question",
+    "sub_fields": [
+      { "key": "field_sf_product_faq_question", "name": "question", "label": "Question", "type": "text" },
+      { "key": "field_sf_product_faq_answer", "name": "answer", "label": "Answer", "type": "wysiwyg", "tabs": "visual", "toolbar": "basic", "media_upload": 0 }
+    ] }
+ ]
+}

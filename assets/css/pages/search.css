@@ -1,0 +1,159 @@
+/* Search page — converted from Shopify rr-search.liquid */
+
+.rr-search { font-family: 'Jost', var(--font-body-family), sans-serif; }
+
+/* Hero */
+.rr-search__hero {
+  background: #1b2a3c; padding: 72px 52px 60px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.rr-search__hero::before {
+  content: ''; position: absolute; top: -120px; left: 50%; transform: translateX(-50%);
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(110,31,47,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+.rr-search__eyebrow {
+  font-size: 10px; font-weight: 500; letter-spacing: 3.5px;
+  text-transform: uppercase; color: #6E1F2F; margin-bottom: 14px;
+}
+.rr-search__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(30px, 4vw, 48px); font-weight: 300;
+  color: #FFFFFF; line-height: 1.12; margin-bottom: 28px;
+}
+.rr-search__title em { font-style: italic; color: #D9B99B; }
+
+/* Search bar */
+.rr-search__form {
+  max-width: 580px; margin: 0 auto;
+  display: flex; position: relative; z-index: 1;
+}
+.rr-search__input {
+  flex: 1; padding: 16px 24px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-right: none;
+  font-family: 'Jost', var(--font-body-family), sans-serif;
+  font-size: 14px; color: #fff; outline: none;
+  transition: border-color 0.3s;
+}
+.rr-search__input::placeholder { color: rgba(255,255,255,0.35); }
+.rr-search__input:focus { border-color: #6E1F2F; }
+.rr-search__btn {
+  padding: 16px 28px;
+  background: #6E1F2F; border: 1px solid #6E1F2F;
+  color: #fff; cursor: pointer;
+  font-family: 'Jost', var(--font-body-family), sans-serif;
+  font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase;
+  transition: background 0.3s;
+  display: flex; align-items: center; gap: 8px;
+}
+.rr-search__btn:hover { background: #561724; border-color: #561724; }
+.rr-search__btn svg { width: 16px; height: 16px; stroke: #fff; fill: none; stroke-width: 2; }
+
+/* Body */
+.rr-search__body { background: #FAF6F2; padding: 52px 52px 80px; }
+.rr-search__body-inner { max-width: 1340px; margin: 0 auto; }
+
+/* Results meta */
+.rr-search__meta {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 36px; padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.08); flex-wrap: wrap; gap: 12px;
+}
+.rr-search__meta-text {
+  font-size: 14px; color: #555;
+}
+.rr-search__meta-text strong { color: #22344a; font-weight: 600; }
+.rr-search__meta-count { font-size: 12px; color: #8A8A8A; }
+
+/* Tabs */
+.rr-search__tabs {
+  display: flex; gap: 4px; margin-bottom: 32px;
+}
+.rr-search__tab {
+  padding: 8px 20px;
+  font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;
+  background: none; border: 1px solid rgba(0,0,0,0.12);
+  cursor: pointer; color: #555; transition: all 0.2s;
+}
+.rr-search__tab.active,
+.rr-search__tab:hover { background: #22344a; color: #fff; border-color: #22344a; }
+
+/* Product grid */
+.rr-search__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.rr-search__card {
+  background: #fff; border-radius: 14px; overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.35s; text-decoration: none; display: block;
+}
+.rr-search__card:hover { transform: translateY(-5px); box-shadow: 0 24px 60px rgba(0,0,0,0.1); border-color: rgba(110,31,47,0.15); }
+.rr-search__card-img {
+  aspect-ratio: 3/4; overflow: hidden;
+  background: linear-gradient(160deg, #EDE7DF, #e8e0d6);
+}
+.rr-search__card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.rr-search__card:hover .rr-search__card-img img { transform: scale(1.04); }
+.rr-search__card-info { padding: 14px 14px 16px; }
+.rr-search__card-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 17px; font-weight: 500; color: #22344a; margin-bottom: 6px;
+}
+.rr-search__card-price { font-size: 14px; font-weight: 600; color: #22344a; }
+.rr-search__card-price del { color: #8A8A8A; font-weight: 400; font-size: 12px; margin-left: 4px; }
+
+/* Page results */
+.rr-search__pages { margin-top: 40px; }
+.rr-search__pages-title {
+  font-size: 12px; font-weight: 500; letter-spacing: 1.5px;
+  text-transform: uppercase; color: #8A8A8A; margin-bottom: 16px;
+}
+.rr-search__page-item {
+  background: #fff; border-radius: 12px; padding: 20px 24px;
+  margin-bottom: 10px; text-decoration: none; display: block;
+  border: 1px solid rgba(0,0,0,0.06); transition: all 0.25s;
+}
+.rr-search__page-item:hover { border-color: rgba(110,31,47,0.25); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+.rr-search__page-name { font-size: 15px; font-weight: 500; color: #22344a; margin-bottom: 4px; }
+.rr-search__page-excerpt { font-size: 12px; color: #8A8A8A; line-height: 1.6; }
+
+/* Empty / no query */
+.rr-search__empty {
+  text-align: center; padding: 60px 20px;
+}
+.rr-search__empty-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px; font-weight: 300; color: #22344a; margin-bottom: 10px;
+}
+.rr-search__empty-sub { font-size: 13px; color: #8A8A8A; margin-bottom: 24px; }
+
+/* Suggestions */
+.rr-search__suggestions { margin-top: 48px; }
+.rr-search__suggestions-title {
+  font-size: 12px; font-weight: 500; letter-spacing: 1.5px;
+  text-transform: uppercase; color: #8A8A8A; margin-bottom: 20px; text-align: center;
+}
+.rr-search__suggestion-tags {
+  display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+}
+.rr-search__suggestion-tags a {
+  padding: 8px 18px;
+  border: 1px solid rgba(110,31,47,0.25); color: #555;
+  font-size: 12px; text-decoration: none; transition: all 0.2s;
+}
+.rr-search__suggestion-tags a:hover { border-color: #6E1F2F; color: #6E1F2F; }
+
+@media (max-width: 1024px) { .rr-search__grid { grid-template-columns: repeat(3,1fr); } }
+@media (max-width: 768px)  {
+  .rr-search__hero { padding: 56px 20px 48px; }
+  .rr-search__body { padding: 40px 20px 60px; }
+  .rr-search__grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .rr-search__form { flex-direction: column; }
+  .rr-search__input { border-right: 1px solid rgba(255,255,255,0.15); }
+}
+@media (max-width: 480px) { .rr-search__grid { grid-template-columns: 1fr; } }

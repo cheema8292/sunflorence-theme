@@ -1,0 +1,1831 @@
+/* Product page block styles — rendered from Shopify snippets/product-info.liquid with the live block settings (tools/render-product-blocks.js). */
+/* price — #block-price_sf */
+#block-price_sf svg{
+                    width: calc(12px * 0.9);
+                    height: calc(12px * 0.9);
+                    
+                }
+
+/* price — #block-price_sf */
+#block-price_sf .shop-product-price-block {
+          font-size: 24px ;
+          font-weight: 600 ;
+          color: #000000 ;
+        }
+
+        #block-price_sf .shop-product-price-block.on-sale {
+          color: #000000 ;
+        }
+
+        #block-price_sf .shop-compare-price {
+          color: #999999 ;
+          font-size: 16px ;
+        }
+
+        #block-price_sf .shop-save-price {
+          background-color: #FF424E ;
+          color: #FFFFFF ;
+          font-size: 12px ;
+          padding: 3px 6px ;
+          
+        }
+
+        @media (max-width: 767px) {
+          #block-price_sf .shop-product-price-block {
+            font-size: 20px ;
+          }
+
+          #block-price_sf .shop-compare-price {
+            font-size: 14px ;
+          }
+        }
+
+/* custom_text — #block-custom_text_VEHNzL */
+.custom-text-block-custom_text_VEHNzL {
+          margin-top: 0px;
+          margin-bottom: 4px;
+          text-align: left;
+          width: 100%;
+          
+        }
+
+        .custom-text-block-custom_text_VEHNzL .custom-text-wrapper {
+          width: 100%;
+        }
+
+        .custom-text-block-custom_text_VEHNzL .custom-text-with-divider {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 12px;
+        }
+
+        .custom-text-block-custom_text_VEHNzL .divider-line {
+          flex: 1;
+          height: 1px;
+          min-height: 1px;
+          min-width: 20px;
+          background-color: #e0e0e0;
+          border: none;
+          margin: 0;
+          display: block;
+          
+        }
+
+        .custom-text-block-custom_text_VEHNzL .custom-text-main {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 14px;
+          font-weight: var(--font-weight-regular)
+          ;
+          
+            width: 100%;
+            
+              justify-content: flex-start;
+            
+          
+          flex-shrink: 0;
+        }
+
+        .custom-text-block-custom_text_VEHNzL .custom-text-icon {
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #333333;
+          width: 20px;
+          height: 20px;
+        }
+
+        .custom-text-block-custom_text_VEHNzL .custom-text-icon svg {
+          width: 100%;
+          height: 100%;
+          fill: currentColor;
+          stroke: currentColor;
+        }
+
+        .custom-text-block-custom_text_VEHNzL .custom-text-content {
+          color: #333333;
+          margin: 0;
+          width: 100%;
+        }
+
+        .custom-text-block-custom_text_VEHNzL .custom-text-main-text-content {
+          
+            text-align: left;
+            
+              width: 100%;
+            
+          
+          font-weight: var(--font-weight-regular)
+          ;
+        }
+
+        /* Ensure paragraph tags inherit the text alignment and font weight */
+        .custom-text-block-custom_text_VEHNzL .custom-text-main-text-content p {
+          text-align: inherit;
+          font-weight: inherit;
+        }
+
+        /* Ensure strong tags within the custom text also respect the font weight setting */
+        .custom-text-block-custom_text_VEHNzL .custom-text-main-text-content strong,
+        .custom-text-block-custom_text_VEHNzL .custom-text-main-text-content b {
+          font-weight: var(--font-weight-semibold)
+          ;
+        }
+
+        
+        .custom-text-block-custom_text_VEHNzL .custom-text-main-text-content p {
+          margin-top: 0;
+          margin-bottom: px;
+        }
+        .custom-text-block-custom_text_VEHNzL .custom-text-main-text-content p:last-child {
+          margin-bottom: 0;
+        }
+        
+
+        .custom-text-block-custom_text_VEHNzL .custom-text-description {
+          font-size: 12px;
+          margin-top: 5px;
+          color: #666666;
+          opacity: 0.8;
+          font-weight: var(--font-weight-regular)
+          ;
+          text-align: left;
+        }
+
+        /* Accent Text Styles */
+        
+
+        /* Ensure strong tags within the description also work properly */
+        .custom-text-block-custom_text_VEHNzL .custom-text-description strong,
+        .custom-text-block-custom_text_VEHNzL .custom-text-description b {
+          font-weight: var(--font-weight-semibold)
+          ;
+        }
+
+        
+        .custom-text-block-custom_text_VEHNzL .custom-text-description p {
+          margin-top: 0;
+          margin-bottom: px;
+        }
+        .custom-text-block-custom_text_VEHNzL .custom-text-description p:last-child {
+          margin-bottom: 0;
+        }
+        
+
+        /* Special handling for center alignment with divider */
+
+/* custom_text — #block-custom_text_VEHNzL */
+/* Ensure strong and bold tags always display as bold */
+        .custom-text-block-custom_text_VEHNzL .custom-text-main-text-content strong,
+        .custom-text-block-custom_text_VEHNzL .custom-text-main-text-content b,
+        .custom-text-block-custom_text_VEHNzL .custom-text-description strong,
+        .custom-text-block-custom_text_VEHNzL .custom-text-description b {
+          font-weight: var(--font-weight-bold) ;
+        }
+
+        /* Override font weight inheritance for non-bold elements only */
+        .custom-text-block-custom_text_VEHNzL *:not(strong):not(b) {
+          font-weight: inherit;
+        }
+
+        /* Ensure all text elements respect the custom font weight (except strong/b tags) */
+        .custom-text-block-custom_text_VEHNzL span:not(strong):not(b),
+        .custom-text-block-custom_text_VEHNzL div:not(.custom-text-icon):not(strong):not(b),
+        .custom-text-block-custom_text_VEHNzL p:not(strong):not(b),
+        .custom-text-block-custom_text_VEHNzL h1:not(strong):not(b),
+        .custom-text-block-custom_text_VEHNzL h2:not(strong):not(b),
+        .custom-text-block-custom_text_VEHNzL h3:not(strong):not(b),
+        .custom-text-block-custom_text_VEHNzL h4:not(strong):not(b),
+        .custom-text-block-custom_text_VEHNzL h5:not(strong):not(b),
+        .custom-text-block-custom_text_VEHNzL h6:not(strong):not(b) {
+          font-weight: var(--font-weight-regular)
+          ;
+        }
+
+/* benefits_grid — #block-benefits_grid_XiWqU9 */
+.bg-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px ;
+    max-width: 450px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    padding: 0px;
+    padding-top: 15px;
+    padding-right: 10px;
+  }
+  
+  .bg-benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  
+  .bg-benefit-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bg-benefit-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .bg-benefit-text {
+    font-family: var(--font-body-family-override);
+      font-weight: var(--font-weight-semibold) ;
+    letter-spacing: var(--letter-spacing-body);
+    line-height: 1.3;
+  }
+  
+  @media (max-width: 768px) {
+    .bg-benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px ;
+    }
+  }
+
+/* simple_variant_picker — #block-variant_picker_sf */
+.simple-variant-picker {
+        margin-bottom: 0px;
+        margin-left: var(--container-margin-left);
+        margin-right: var(--container-margin-right);
+      }
+
+      .simple-variant-picker__label {
+        display: var(--show-labels);
+        font-size: var(--label-size);
+        font-weight: var(--font-weight-bold);
+        color: var(--label-color);
+        margin-bottom: 10px;
+        width: 100%;
+        letter-spacing: var(--letter-spacing-body);
+      }
+
+      .simple-variant-picker__label-row {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 10px;
+      }
+
+      .simple-variant-picker__label-row .simple-variant-picker__label {
+        margin-bottom: 0;
+        width: auto;
+        flex-shrink: 0;
+      }
+
+      .simple-variant-picker__selected-container {
+        flex: 1;
+      }
+
+      .simple-variant-picker__inline-size-chart {
+        flex-shrink: 0;
+        margin-left: auto;
+      }
+
+      /* Desktop: keep label + selected together on the left and push size chart to the far right */
+      @media (min-width: 990px) {
+        .simple-variant-picker__label-row {
+          width: 100%;
+        }
+        .simple-variant-picker__selected-container {
+          flex: 0 0 auto;
+        }
+        .simple-variant-picker__inline-size-chart {
+          margin-left: auto;
+        }
+      }
+
+      .simple-variant-picker__option {
+        margin-bottom: 15px;
+        width: 100%;
+        clear: both;
+        display: block;
+      }
+
+      .simple-variant-picker__error {
+        /* q i let you modify this css for the error if no variant is selected */
+        color: red;
+      }
+
+      /* Dropdown specific styling */
+      .simple-variant-picker__dropdown-option .simple-variant-picker__label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .simple-variant-picker__select {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid var(--option-border-color);
+        border-radius: var(--option-border-radius);
+        background-color: var(--option-bg-color);
+        color: var(--option-text-color);
+        font-size: var(--option-font-size);
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        background-position: right 8px center;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        padding-right: 32px;
+      }
+
+      .simple-variant-picker__select:focus {
+        outline: none;
+        border-color: var(--selected-border-color);
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .simple-variant-picker__select option:disabled {
+        color: #999;
+        opacity: 0.6;
+      }
+
+      /* Adjust spacing when labels are hidden */
+      .simple-variant-picker[style*='--show-labels: none'] .simple-variant-picker__option {
+        margin-bottom: 10px;
+      }
+
+      .simple-variant-picker__values {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      /* Size options should have a smaller gap */
+      .option--size .simple-variant-picker__values {
+        gap: 8px;
+      }
+
+      /* Color options can have slightly larger gap */
+      .option--color .simple-variant-picker__values {
+        gap: 15px;
+      }
+
+      .simple-variant-picker__value-container {
+        position: relative;
+        display: flex;
+        gap: 3px;
+      }
+
+      .simple-variant-picker__radio {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        cursor: pointer;
+      }
+
+      .simple-variant-picker__value {
+        padding: var(--option-padding-vertical) var(--option-padding-horizontal);
+        background-color: var(--option-bg-color);
+        border: 1px solid var(--option-border-color);
+        border-radius: var(--option-border-radius);
+        color: var(--option-text-color);
+        font-size: var(--option-font-size);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-align: center;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+      }
+
+      .simple-variant-image.simple-variant-picker__value {
+        line-height: var(--option-image-size);
+      }
+
+      .simple-variant-picker__radio:checked + .simple-variant-picker__value {
+        background-color: var(--selected-bg-color);
+        color: var(--selected-text-color);
+        border-color: var(--selected-border-color);
+      }
+
+      /* Size option styling */
+      .value--size .simple-variant-picker__value.size-value {
+        min-width: 32px;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: var(--font-weight-regular);
+        text-transform: uppercase;
+        font-size: 13px;
+        margin: 0;
+      }
+
+      /* Improve size variant layout */
+      .value--size {
+        margin-right: 0;
+      }
+
+      /* Color swatch styling */
+      .simple-variant-picker__color-swatch {
+        display: block;
+        width: var(--swatch-size);
+        height: var(--swatch-size);
+        border-radius: 50%;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        transform: scale(1);
+      }
+
+      /* Add an outer circle that's 5px larger */
+      .simple-variant-picker__color-swatch::before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border-radius: 50%;
+        border: 1px solid var(--outline-color);
+        pointer-events: none;
+      }
+
+      /* Variant image color swatches (when show_variant_images is enabled) */
+      .simple-variant-picker__color-swatch[style*='background-image'] {
+        border: var(--variant-image-border-width) solid var(--variant-image-border-color);
+        border-radius: var(--variant-image-border-radius);
+        background-size: cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+        overflow: hidden;
+      }
+
+      .simple-variant-picker__color-swatch[style*='background-image']::before {
+        border: var(--variant-image-border-width) solid var(--variant-image-border-color);
+        border-radius: var(--variant-image-border-radius);
+        top: calc(-1 * var(--variant-image-border-width) - 2px);
+        left: calc(-1 * var(--variant-image-border-width) - 2px);
+        right: calc(-1 * var(--variant-image-border-width) - 2px);
+        bottom: calc(-1 * var(--variant-image-border-width) - 2px);
+      }
+
+      [data-white-swatch] {
+      }
+
+      .simple-variant-picker__radio:checked + .simple-variant-picker__color-swatch {
+        transform: scale(1.05);
+        box-shadow: none;
+        animation: fadeInSelected 0.2s ease-out;
+      }
+
+      .simple-variant-picker__color-swatch:hover:not(.unavailable) {
+        transform: scale(1.1);
+        box-shadow: none;
+      }
+
+      .simple-variant-picker__color-swatch:active:not(.unavailable) {
+        transform: scale(0.95);
+        box-shadow: none;
+      }
+
+      .simple-variant-picker__radio:checked + .simple-variant-picker__color-swatch::before {
+        border-color: var(--selected-border-color);
+      }
+
+      /* Selected state for variant image color swatches */
+      .simple-variant-picker__radio:checked + .simple-variant-picker__color-swatch[style*='background-image'] {
+        border-color: var(--variant-image-selected-border-color) ;
+        border-width: var(--variant-image-selected-border-width) ;
+        animation: fadeInSelected 0.2s ease-out;
+      }
+
+      .simple-variant-picker__radio:checked + .simple-variant-picker__color-swatch[style*='background-image']::before {
+        border-color: var(--variant-image-selected-border-color) ;
+        border-width: var(--variant-image-selected-border-width) ;
+        top: calc(-1 * var(--variant-image-selected-border-width) - 2px) ;
+        left: calc(-1 * var(--variant-image-selected-border-width) - 2px) ;
+        right: calc(-1 * var(--variant-image-selected-border-width) - 2px) ;
+        bottom: calc(-1 * var(--variant-image-selected-border-width) - 2px) ;
+      }
+
+      /* Ensure variant images always take priority over default swatches */
+      .simple-variant-picker__color-swatch[style*='background-image'] {
+        background-color: transparent ;
+      }
+
+      /* Force variant images to override any external swatch system */
+      .simple-variant-picker__color-swatch[style*='url'] {
+        background-size: cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+      }
+
+      /* Maximum priority override for variant images */
+      .simple-variant-picker .simple-variant-picker__color-swatch[data-image-url] {
+        background-image: attr(data-image-url url) ;
+        background-color: transparent ;
+      }
+
+      /* Prevent any external CSS from overriding our variant images */
+      .simple-variant-picker__color-swatch[style*='background-image'] {
+        background-color: unset ;
+        background: none ;
+      }
+
+      /* THEME OVERRIDE: Prevent global swatch CSS from interfering */
+      .simple-variant-picker .simple-variant-picker__color-swatch.swatch,
+      .simple-variant-picker .simple-variant-picker__color-swatch {
+        background: none ;
+        background-color: transparent ;
+      }
+
+      /* Force our background images to take priority over theme swatch system */
+      .simple-variant-picker .simple-variant-picker__color-swatch[style*='background-image'] {
+        background-size: cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+        background-origin: padding-box ;
+      }
+
+      /* Override any CSS custom properties that might interfere */
+      .simple-variant-picker .simple-variant-picker__color-swatch {
+        --swatch--background: none ;
+      }
+
+      /* Specific override for variant images */
+      .simple-variant-picker__color-swatch[style*='url'] {
+        background: var(--variant-image-url) ;
+        --swatch--background: none ;
+      }
+
+      .simple-variant-picker__swatch-label {
+        display: none;
+      }
+
+      .option--color .simple-variant-picker__values {
+        align-items: flex-start;
+      }
+
+      .value--color {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .simple-variant-picker__value.unavailable,
+      .simple-variant-picker__color-swatch.unavailable {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .simple-variant-picker__value.unavailable {
+        text-decoration: line-through;
+      }
+
+      .simple-variant-picker__color-swatch.unavailable {
+        position: relative;
+      }
+
+      .simple-variant-picker__color-swatch.unavailable::before {
+        border-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .simple-variant-picker__color-swatch.unavailable::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -2px;
+        right: -2px;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: rotate(-45deg);
+      }
+
+      .simple-variant-picker__value.non-existent,
+      .simple-variant-picker__color-swatch.non-existent {
+        display: none;
+      }
+
+      .simple-variant-picker__selected {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .simple-variant-picker__selected-variant {
+        font-weight: var(--font-weight-regular);
+        display: inline;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      /* ADDITIONAL THEME OVERRIDES - Maximum specificity */
+      .simple-variant-picker .simple-variant-picker__color-swatch.has-variant-image {
+        background-color: transparent ;
+        background-size: cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+        background-origin: padding-box ;
+      }
+
+      /* Override any potential CSS custom property interference */
+      .simple-variant-picker {
+        --swatch--background: none ;
+        --swatch-input--background: none ;
+      }
+
+      /* Ensure our swatches don't inherit theme swatch properties */
+      .simple-variant-picker .simple-variant-picker__color-swatch {
+        background-origin: padding-box ;
+        forced-color-adjust: none ;
+      }
+
+      /* Final override for stubborn theme CSS */
+      [class*='simple-variant-picker'] .simple-variant-picker__color-swatch[data-image-url] {
+        background-image: var(--variant-image-url) ;
+      }
+
+      /* Styles for non-color variant images */
+      .simple-variant-picker__image-variant {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-width: var(--image-variant-size);
+        height: var(--image-variant-size);
+        border: var(--variant-image-border-width) solid var(--variant-image-border-color);
+        border-radius: var(--variant-image-border-radius);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 0;
+        overflow: hidden;
+        transform: scale(1);
+      }
+
+      /* Ensure images inside variant containers fill completely */
+      .simple-variant-picker__image-variant img {
+        width: 100% ;
+        height: 100% ;
+        object-fit: cover ;
+        border-radius: inherit ;
+      }
+
+      .simple-variant-picker__image-variant .simple-variant-picker__variant-text {
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--option-text-color);
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: var(--option-font-size);
+        font-weight: 500;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2px);
+      }
+
+      .simple-variant-picker__radio:checked + .simple-variant-picker__image-variant {
+        border-color: var(--variant-image-selected-border-color) ;
+        border-width: var(--variant-image-selected-border-width) ;
+        box-shadow: calc(var(--show-variant-shadows) * 0px) calc(var(--show-variant-shadows) * 2px)
+          calc(var(--show-variant-shadows) * 8px) rgba(0, 0, 0, calc(var(--show-variant-shadows) * 0.12));
+        animation: fadeInSelected 0.2s ease-out;
+      }
+
+      .simple-variant-picker__image-variant:hover:not(.unavailable) {
+        box-shadow: calc(var(--show-variant-shadows) * 0px) calc(var(--show-variant-shadows) * 1px)
+          calc(var(--show-variant-shadows) * 4px) rgba(0, 0, 0, calc(var(--show-variant-shadows) * 0.08));
+      }
+
+      .simple-variant-picker__radio:checked
+        + .simple-variant-picker__image-variant
+        .simple-variant-picker__variant-text {
+        background: var(--selected-bg-color);
+        color: var(--selected-text-color);
+      }
+
+      .simple-variant-picker__image-variant.unavailable {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .simple-variant-picker__image-variant.non-existent {
+        display: none;
+      }
+
+      /* Responsive sizing for image variants */
+      @media screen and (max-width: 749px) {
+        .simple-variant-picker {
+          width: 100%;
+        }
+
+        .simple-variant-picker__option {
+          width: 100%;
+        }
+
+        .simple-variant-picker__values {
+          width: 100%;
+          gap: 8px;
+        }
+
+        .simple-variant-picker__image-variant {
+          width: 100%;
+          min-width: calc(var(--image-variant-size) * 0.8);
+          height: 0;
+          padding-bottom: 100%;
+          flex: 1;
+          max-width: none;
+          position: relative;
+        }
+
+        .simple-variant-picker__image-variant img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% ;
+          height: 100% ;
+          object-fit: cover ;
+        }
+
+        .simple-variant-picker__image-variant .simple-variant-picker__variant-text {
+          font-size: calc(var(--option-font-size) * 0.9);
+          padding: 1px 6px;
+          position: absolute;
+          bottom: 4px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1;
+        }
+      }
+
+      /* Keyframe animations for variant selection */
+      @keyframes fadeInSelected {
+        0% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+/* add_to_cart — #block-add_to_cart */
+.shop-add-to-cart-button  .button-text {
+          text-transform: none ;
+        }
+        /* Ensure form takes full width */
+        #product-form-main,
+        .form {
+          width: 100% ;
+          display: block;
+        }
+        .shop-add-to-cart-button .path {
+          stroke: #ffffff;
+        }
+
+/* add_to_cart — #block-add_to_cart */
+.guarantee-badges-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: var(--letter-spacing-body);
+  color: #000000 ;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .guarantee-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    min-width: 0;
+  }
+  
+  .guarantee-icon {
+    width: 20px;
+    height: 20px;
+    stroke: #00C7FF;
+    margin-bottom: 1px;
+  }
+  
+  .guarantee-custom-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .guarantee-custom-icon svg {
+    width: 100% ;
+    height: 100% ;
+    max-width: 20px ;
+    max-height: 20px ;
+    fill: #00C7FF ;
+    stroke: #00C7FF ;
+  }
+  
+  .guarantee-custom-icon img {
+    width: 100% ;
+    height: 100% ;
+    max-width: 20px ;
+    max-height: 20px ;
+    object-fit: contain ;
+  }
+  
+  .guarantee-text {
+    font-weight: 500;
+    letter-spacing: var(--letter-spacing-body);
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  @media (max-width: 480px) {
+    .guarantee-badges-container {
+      flex-direction: row;
+      
+      justify-content: center;
+      margin-top: -5px;
+      flex-wrap: wrap;
+    }
+    
+    .guarantee-item {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+/* custom_text — #block-trust_badges_rr */
+.custom-text-block-trust_badges_rr {
+          margin-top: 8px;
+          margin-bottom: 8px;
+          text-align: left;
+          width: 100%;
+          
+            
+            background-color: #ffffff;
+            
+            padding: 14px 18px 14px 18px;
+            border-radius: 8px;
+          
+        }
+
+        .custom-text-block-trust_badges_rr .custom-text-wrapper {
+          width: 100%;
+        }
+
+        .custom-text-block-trust_badges_rr .custom-text-with-divider {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 12px;
+        }
+
+        .custom-text-block-trust_badges_rr .divider-line {
+          flex: 1;
+          height: 1px;
+          min-height: 1px;
+          min-width: 20px;
+          background-color: #e0e0e0;
+          border: none;
+          margin: 0;
+          display: block;
+          
+        }
+
+        .custom-text-block-trust_badges_rr .custom-text-main {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 12px;
+          font-weight: var(--font-weight-regular)
+          ;
+          
+            width: 100%;
+            
+              justify-content: flex-start;
+            
+          
+          flex-shrink: 0;
+        }
+
+        .custom-text-block-trust_badges_rr .custom-text-icon {
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #333333;
+          width: 20px;
+          height: 20px;
+        }
+
+        .custom-text-block-trust_badges_rr .custom-text-icon svg {
+          width: 100%;
+          height: 100%;
+          fill: currentColor;
+          stroke: currentColor;
+        }
+
+        .custom-text-block-trust_badges_rr .custom-text-content {
+          color: #22344a;
+          margin: 0;
+          width: 100%;
+        }
+
+        .custom-text-block-trust_badges_rr .custom-text-main-text-content {
+          
+            text-align: left;
+            
+              width: 100%;
+            
+          
+          font-weight: var(--font-weight-regular)
+          ;
+        }
+
+        /* Ensure paragraph tags inherit the text alignment and font weight */
+        .custom-text-block-trust_badges_rr .custom-text-main-text-content p {
+          text-align: inherit;
+          font-weight: inherit;
+        }
+
+        /* Ensure strong tags within the custom text also respect the font weight setting */
+        .custom-text-block-trust_badges_rr .custom-text-main-text-content strong,
+        .custom-text-block-trust_badges_rr .custom-text-main-text-content b {
+          font-weight: var(--font-weight-semibold)
+          ;
+        }
+
+        
+        .custom-text-block-trust_badges_rr .custom-text-main-text-content p {
+          margin-top: 0;
+          margin-bottom: px;
+        }
+        .custom-text-block-trust_badges_rr .custom-text-main-text-content p:last-child {
+          margin-bottom: 0;
+        }
+        
+
+        .custom-text-block-trust_badges_rr .custom-text-description {
+          font-size: 10px;
+          margin-top: 4px;
+          color: #666666;
+          opacity: 0.8;
+          font-weight: var(--font-weight-regular)
+          ;
+          text-align: left;
+        }
+
+        /* Accent Text Styles */
+        
+
+        /* Ensure strong tags within the description also work properly */
+        .custom-text-block-trust_badges_rr .custom-text-description strong,
+        .custom-text-block-trust_badges_rr .custom-text-description b {
+          font-weight: var(--font-weight-semibold)
+          ;
+        }
+
+        
+        .custom-text-block-trust_badges_rr .custom-text-description p {
+          margin-top: 0;
+          margin-bottom: px;
+        }
+        .custom-text-block-trust_badges_rr .custom-text-description p:last-child {
+          margin-bottom: 0;
+        }
+        
+
+        /* Special handling for center alignment with divider */
+
+/* custom_text — #block-trust_badges_rr */
+/* Ensure strong and bold tags always display as bold */
+        .custom-text-block-trust_badges_rr .custom-text-main-text-content strong,
+        .custom-text-block-trust_badges_rr .custom-text-main-text-content b,
+        .custom-text-block-trust_badges_rr .custom-text-description strong,
+        .custom-text-block-trust_badges_rr .custom-text-description b {
+          font-weight: var(--font-weight-bold) ;
+        }
+
+        /* Override font weight inheritance for non-bold elements only */
+        .custom-text-block-trust_badges_rr *:not(strong):not(b) {
+          font-weight: inherit;
+        }
+
+        /* Ensure all text elements respect the custom font weight (except strong/b tags) */
+        .custom-text-block-trust_badges_rr span:not(strong):not(b),
+        .custom-text-block-trust_badges_rr div:not(.custom-text-icon):not(strong):not(b),
+        .custom-text-block-trust_badges_rr p:not(strong):not(b),
+        .custom-text-block-trust_badges_rr h1:not(strong):not(b),
+        .custom-text-block-trust_badges_rr h2:not(strong):not(b),
+        .custom-text-block-trust_badges_rr h3:not(strong):not(b),
+        .custom-text-block-trust_badges_rr h4:not(strong):not(b),
+        .custom-text-block-trust_badges_rr h5:not(strong):not(b),
+        .custom-text-block-trust_badges_rr h6:not(strong):not(b) {
+          font-weight: var(--font-weight-regular)
+          ;
+        }
+
+/* product_faq — #block-faq */
+.product-faq {
+    width: 100%;
+    margin: 5px auto 5px;
+    font-size: 95%;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: transparent;
+  }
+
+  .faq-container.border-bottom-only .faq-question {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .faq-container.border-bottom-only .faq-answer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Each FAQ item is its own separate box */
+  .faq-item {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: var(--font-weight-regular);
+    position: relative;
+    color: #111111;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Hover effect removed - no color change on hover */
+
+  .faq-question-image,
+  .faq-question-svg {
+    margin-right: 12px;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .faq-question-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .faq-question-svg svg {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+
+  .faq-question-svg {
+    background-color: transparent;
+  }
+
+  .faq-question-text {
+    flex: 1;
+  }
+
+  .faq-toggle {
+    font-size: 18px;
+    font-weight: var(--font-weight-regular);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+
+  .faq-answer {
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: #22344a;
+    background-color: #ffffff;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 600px;
+    padding: 0 16px 3px;
+    overflow-y: auto;
+  }
+
+  /* Imported (e.g. DSers / AliExpress) descriptions: keep images and tables inside the tab */
+  .faq-answer img { max-width: 100% !important; height: auto !important; display: block; margin: 8px auto; }
+  .faq-answer table { width: 100% !important; max-width: 100%; border-collapse: collapse; display: block; overflow-x: auto; }
+  .faq-answer iframe, .faq-answer video { max-width: 100%; }
+  .faq-answer * { max-width: 100%; box-sizing: border-box; }
+
+  /* Custom scrollbar styling for FAQ answers */
+  .faq-answer::-webkit-scrollbar {
+    width: 6px;
+  }
+  .faq-answer::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+  .faq-answer::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+  }
+  .faq-answer::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .product-faq {
+      font-size: 90%;
+      width: 100%;
+    }
+    
+    .faq-question {
+      padding: 8px 14px;
+      font-size: 16px;
+    }
+    
+    .faq-question-image,
+    .faq-question-svg {
+      width: 26.25px;
+      height: 26.25px;
+      margin-right: 10px;
+    }
+    
+    .faq-toggle {
+      font-size: 16px;
+    }
+    
+    .faq-answer {
+      padding: 0 14px;
+      font-size: 13px;
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 120px;
+      padding: 0 14px 3px;
+    }
+
+    /* Smaller scrollbar on mobile */
+    .faq-answer::-webkit-scrollbar {
+      width: 4px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .product-faq {
+      font-size: 85%;
+      width: 100%;
+      margin: 4px auto 4px;
+    }
+    
+    .faq-question {
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    
+    .faq-question-image,
+    .faq-question-svg {
+      width: 22.5px;
+      height: 22.5px;
+      margin-right: 8px;
+    }
+    
+    .faq-toggle {
+      font-size: 14px;
+    }
+    
+    .faq-answer {
+      padding: 0 12px;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 100px;
+      padding: 0 12px 3px;
+    }
+
+    /* Even smaller scrollbar on small mobile */
+    .faq-answer::-webkit-scrollbar {
+      width: 3px;
+    }
+  }
+
+/* video_carousel_standalone — #block-video_carousel_standalone_xw3T8p */
+.video-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .carousel-heading {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-weight: var(--font-weight-semibold) ;
+    letter-spacing: var(--letter-spacing-heading);
+  }
+  
+  .tiktok-views-badge {
+    display: inline-flex ;
+    align-items: center ;
+    padding: 4px 14px ;
+    background-color: transparent ;
+    border-radius: 999px ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif ;
+    font-size: 11px ;
+    color: #262626 ;
+    position: relative ;
+    border: none ;
+    margin-bottom: 10px ;
+    z-index: 999 ;
+    visibility: visible ;
+    opacity: 1 ;
+    overflow: visible ;
+  }
+  
+  .tiktok-views-badge::before {
+    content: '' ;
+    position: absolute ;
+    top: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+    z-index: -1 ;
+    border-radius: 999px ;
+    background: linear-gradient(45deg, #00f2ea, #ff0050) ;
+  }
+  
+  .tiktok-views-badge::after {
+    content: '' ;
+    position: absolute ;
+    top: 1px ;
+    right: 1px ;
+    bottom: 1px ;
+    left: 1px ;
+    z-index: -1 ;
+    border-radius: 999px ;
+    background-color: #ffffff ;
+  }
+  
+  .tiktok-icon {
+    width: 12px ;
+    height: 12px ;
+    margin-right: 8px ;
+    margin-left: 1px ;
+    flex-shrink: 0 ;
+  }
+  
+  .tiktok-text {
+    letter-spacing: -0.3px ;
+    font-weight: 500 ;
+  }
+  
+  /* Gradient Text Classes */
+  .gradient-text {
+    background-clip: text ;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent ;
+    color: transparent ;
+    display: inline-block ;
+    background-size: 100% 100% ;
+    background-repeat: no-repeat ;
+    background-attachment: scroll ;
+    -webkit-box-decoration-break: clone ;
+    box-decoration-break: clone ;
+  }
+  
+  /* TikTok Gradient (default) */
+  .tiktok-text.gradient-text {
+    background: linear-gradient(45deg, #00f2ea, #ff0050) ;
+    background-clip: text ;
+    -webkit-background-clip: text ;
+  }
+  
+  /* Instagram Gradient */
+  .instagram-text.gradient-text.instagram-gradient {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045) ;
+    background-clip: text ;
+    -webkit-background-clip: text ;
+  }
+  
+  /* Facebook Gradient */
+  .facebook-text.gradient-text.facebook-gradient {
+    background: linear-gradient(45deg, #1877F2, #42a5f5) ;
+    background-clip: text ;
+    -webkit-background-clip: text ;
+  }
+  
+  /* Instagram Badge Styling */
+  .instagram-views-badge {
+    display: inline-flex ;
+    align-items: center ;
+    padding: 4px 14px ;
+    background-color: transparent ;
+    border-radius: 999px ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif ;
+    font-size: 11px ;
+    color: #262626 ;
+    position: relative ;
+    border: none ;
+    margin-bottom: 10px ;
+    z-index: 999 ;
+    visibility: visible ;
+    opacity: 1 ;
+    overflow: visible ;
+  }
+  
+  .instagram-views-badge::before {
+    content: '' ;
+    position: absolute ;
+    top: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+    z-index: -1 ;
+    border-radius: 999px ;
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045) ;
+  }
+  
+  .instagram-views-badge::after {
+    content: '' ;
+    position: absolute ;
+    top: 1px ;
+    right: 1px ;
+    bottom: 1px ;
+    left: 1px ;
+    z-index: -1 ;
+    border-radius: 999px ;
+    background-color: #ffffff ;
+  }
+  
+  /* Facebook Badge Styling */
+  .facebook-views-badge {
+    display: inline-flex ;
+    align-items: center ;
+    padding: 4px 14px ;
+    background-color: transparent ;
+    border-radius: 999px ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif ;
+    font-size: 11px ;
+    color: #262626 ;
+    position: relative ;
+    border: none ;
+    margin-bottom: 10px ;
+    z-index: 999 ;
+    visibility: visible ;
+    opacity: 1 ;
+    overflow: visible ;
+  }
+  
+  .facebook-views-badge::before {
+    content: '' ;
+    position: absolute ;
+    top: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+    z-index: -1 ;
+    border-radius: 999px ;
+    background: linear-gradient(45deg, #1877F2, #42a5f5) ;
+  }
+  
+  .facebook-views-badge::after {
+    content: '' ;
+    position: absolute ;
+    top: 1px ;
+    right: 1px ;
+    bottom: 1px ;
+    left: 1px ;
+    z-index: -1 ;
+    border-radius: 999px ;
+    background-color: #ffffff ;
+  }
+  
+  .video-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 4px;
+    padding: 5px 0;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none ;
+    
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .video-carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .video-item {
+    flex: 0 0 260px ;
+    width: 260px ;
+    position: relative ;
+    min-width: 260px ;
+    max-width: 260px ;
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+  }
+  
+  .video-thumbnail {
+    position: relative ;
+    border-radius: 6px ;
+    overflow: hidden ;
+    height: 463px ;
+    background-color: #f0f0f0 ;
+    width: 100% ;
+    margin: 0 ;
+    padding: 0 ;
+  }
+  
+  .gradient-overlay {
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 70px ;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%) ;
+    z-index: 1 ;
+    pointer-events: none ;
+  }
+  
+  .carousel-video {
+    width: 100% ;
+    height: 100% ;
+    display: block ;
+    object-fit: cover ;
+    background-color: #f0f0f0 ;
+  }
+  
+  .video-play-overlay {
+    position: absolute ;
+    bottom: 8px ;
+    left: 8px ;
+    width: auto ;
+    height: auto ;
+    display: flex ;
+    align-items: center ;
+    justify-content: flex-start ;
+    z-index: 10 ;
+    pointer-events: none ;
+  }
+
+  .video-carousel-container .testimonial-play-button {
+    width: 30px ;
+    height: 30px ;
+    border-radius: 50% ;
+    background: rgba(#000000, #000000, #000000, 0.35) ;
+    border: none ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer ;
+    transition: transform 0.2s ease, background 0.2s ease ;
+    pointer-events: auto ;
+  }
+
+  .video-carousel-container .testimonial-play-button:hover {
+    transform: scale(1.1) ;
+    background: rgba(#000000, #000000, #000000, 0.51) ;
+  }
+
+  .video-carousel-container .testimonial-play-button svg {
+    width: 24px ;
+    height: 24px ;
+    fill: #ffffff ;
+    margin-left: 1px ;
+  }
+  
+  /* Inline video styles */
+  .inline-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .inline-video-container iframe,
+  .inline-video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .video-carousel-container .video-sound-button {
+    position: absolute ;
+    bottom: 8px ;
+    right: 8px ;
+    width: 30px ;
+    height: 30px ;
+    border-radius: 50% ;
+    background: rgba(#000000, #000000, #000000, 0.35) ;
+    border: none ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer ;
+    z-index: 20 ;
+    transition: transform 0.2s ease, background 0.2s ease ;
+  }
+  
+  .video-carousel-container .video-sound-button:hover {
+    transform: scale(1.1) ;
+    background: rgba(#000000, #000000, #000000, 0.51) ;
+  }
+  
+  .video-carousel-container .video-sound-button svg {
+    width: 20px ;
+    height: 20px ;
+    fill: white ;
+  }
+  
+  .video-playing .video-play-overlay {
+    display: flex ;
+  }
+  
+  .video-carousel-container[data-enable-autoplay="true"] .video-play-overlay {
+    display: none ;
+  }
+  
+  .video-carousel-container[data-show-sound-controls="false"] .video-sound-button {
+    display: none ;
+  }
+  
+  /* Modal styles - hidden since we're using inline playback */
+  .video-modal {
+    display: none ;
+  }
+  
+
+  .instagram-icon {
+    width: 12px ;
+    height: 12px ;
+    margin-right: 8px ;
+    margin-left: 1px ;
+    flex-shrink: 0 ;
+  }
+
+  .instagram-text {
+    letter-spacing: -0.3px ;
+    font-weight: 500 ;
+  }
+  
+  
+  .facebook-icon {
+    width: 12px ;
+    height: 12px ;
+    margin-right: 8px ;
+    margin-left: 1px ;
+    flex-shrink: 0 ;
+  }
+  
+  .facebook-text {
+    letter-spacing: -0.3px ;
+    font-weight: 500 ;
+  }
+  
+  @media (max-width: 768px) {
+    .tiktok-views-badge,
+    .instagram-views-badge,
+    .facebook-views-badge {
+      font-size: 11px ;
+      padding: 1.7px 12px ;
+    }
+    
+    .tiktok-icon,
+    .instagram-icon,
+    .facebook-icon {
+      width: 11.7px ;
+      height: 11.7px ;
+      margin-right: 7.5px ;
+    }
+  }
+
+/* customer_review — #block-customer_review_XcjYbg */
+.customer-review-customer_review_XcjYbg {
+    display: flex;
+    padding: clamp(12px, 1%, 24px);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    border: 1px dashed #22344a;
+    border-radius: 8px;
+    font-family: var(--font-body-family-override);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    letter-spacing: var(--letter-spacing-heading);
+    box-sizing: border-box;
+    align-items: flex-start;
+    gap: clamp(10px, 3%, 20px);
+    width: 100%;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-avatar-container {
+    position: relative;
+    width: 75px;
+    flex: 0 0 auto;
+    align-self: flex-start;
+  }
+  
+  /* This pseudo-element ensures the container remains square */
+  .customer-review-customer_review_XcjYbg .customer-review-avatar-container::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* Creates a 1:1 aspect ratio */
+  }
+
+  .customer-review-customer_review_XcjYbg .customer-review-avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 50px;
+    background-color: #f5f5f5;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* Allows content to shrink below its minimum content size */
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: clamp(4px, 1.5%, 8px);
+    flex-wrap: nowrap;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-name {
+    font-weight: var(--font-weight-bold) ;
+    font-size: 16px;
+    color: #22344a;
+    display: flex;
+    align-items: center;
+    letter-spacing: var(--letter-spacing-body);
+    flex-shrink: 0;
+    margin-right: 0;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-verified {
+    margin-left: 5px;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-stars {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-star {
+    margin-right: -3px;
+    fill: #D8D8D8;
+    height: 16px;
+    width: 16px;
+    flex-shrink: 0;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-star--filled {
+    fill: #22344a;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-text {
+    margin: 0 ;
+    font-size: 14px ;
+    color: #22344a ;
+    letter-spacing: var(--letter-spacing-body) ;
+    line-height: 1.4 ;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    max-height: none; /* Allow content to expand based on text amount */
+  }
+  
+  /* Add responsive sizing for shorter reviews */
+  .customer-review-customer_review_XcjYbg .customer-review-text:empty {
+    display: none;
+  }
+  
+  .customer-review-customer_review_XcjYbg .customer-review-text:only-child {
+    margin-top: 0;
+  }
+  
+  @media (max-width: 480px) {
+    .customer-review-customer_review_XcjYbg {
+      padding: 10px;
+      gap: 8px;
+    }
+    
+    .customer-review-customer_review_XcjYbg .customer-review-avatar-container {
+      width: 65px;
+      /* The padding-top percentage in the ::before element 
+      ensures it remains square at all widths */
+    }
+    
+    .customer-review-customer_review_XcjYbg .customer-review-header {
+      margin-bottom: 3px;
+    }
+    
+    .customer-review-customer_review_XcjYbg .customer-review-name {
+      /* Use customizable sizing instead of fixed mobile size */
+    }
+    
+    .customer-review-customer_review_XcjYbg .customer-review-verified {
+      /* Use customizable sizing that scales with name size */
+    }
+    
+    .customer-review-customer_review_XcjYbg .customer-review-star {
+      /* Use customizable sizing instead of fixed mobile size */
+    }
+    
+    .customer-review-customer_review_XcjYbg .customer-review-text {
+      /* Use customizable sizing instead of fixed mobile size */
+      line-height: 1.3;
+    }
+  }

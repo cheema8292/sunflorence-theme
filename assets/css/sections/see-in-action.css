@@ -1,0 +1,195 @@
+/* See it in action (video reviews) — converted from Shopify rr-see-in-action.liquid */
+
+.rr-sia {
+  background: var(--s-bg_color, #FFFFFF);
+  padding: calc(var(--s-padding_vertical, 88) * 1px) calc(var(--s-padding_horizontal, 32) * 1px);
+  font-family: 'Montserrat', var(--font-body-family), sans-serif;
+}
+.rr-sia__inner { max-width: 1200px; margin: 0 auto; }
+
+.rr-sia__head { margin-bottom: 28px; }
+.rr-sia__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(30px, 3.4vw, 50px);
+  font-weight: 400;
+  color: var(--s-text_color, #22344a);
+  margin: 0 0 12px;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+}
+.rr-sia__badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 7px 16px;
+  border: 1px solid rgba(0,0,0,0.18);
+  border-radius: 30px;
+  font-size: 12px; font-weight: 500;
+  color: var(--s-text_color, #22344a);
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.2s;
+}
+.rr-sia__badge:hover { background: rgba(0,0,0,0.04); }
+.rr-sia__badge svg { width: 16px; height: 16px; }
+.rr-sia__badge-ig {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Slider track */
+.rr-sia__slider {
+  display: flex; gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none; -ms-overflow-style: none;
+  padding-bottom: 4px;
+  cursor: grab;
+}
+.rr-sia__slider::-webkit-scrollbar { display: none; }
+.rr-sia__slider.is-dragging { cursor: grabbing; }
+
+.rr-sia__card {
+  flex: 0 0 calc((100% - 48px) / 4);
+  scroll-snap-align: start;
+  position: relative;
+  aspect-ratio: 9 / 16;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.rr-sia__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 48px rgba(0,0,0,0.18);
+}
+.rr-sia__card.is-active {
+  box-shadow: 0 0 0 3px var(--s-accent_color, #8a5a3b), 0 18px 48px rgba(0,0,0,0.18);
+}
+
+.rr-sia__poster,
+.rr-sia__video,
+.rr-sia__empty {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.rr-sia__video { z-index: 2; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+.rr-sia__card.is-playing .rr-sia__video { opacity: 1; pointer-events: auto; }
+.rr-sia__card.is-playing .rr-sia__poster,
+.rr-sia__card.is-playing .rr-sia__empty { opacity: 0; }
+.rr-sia__poster { transition: opacity 0.3s, transform 0.5s; z-index: 1; }
+.rr-sia__card:hover .rr-sia__poster { transform: scale(1.04); }
+
+.rr-sia__empty {
+  background: linear-gradient(160deg, #f5efe7 0%, #e8ddd0 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 10px;
+  color: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+.rr-sia__empty svg { width: 38px; height: 38px; stroke: currentColor; fill: none; stroke-width: 1.6; }
+.rr-sia__empty span {
+  font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+}
+
+.rr-sia__play {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 3;
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+.rr-sia__card.is-playing .rr-sia__play { opacity: 0; }
+.rr-sia__play-icon {
+  width: 58px; height: 58px; border-radius: 50%;
+  background: rgba(255,255,255,0.92);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+  transition: transform 0.25s;
+}
+.rr-sia__card:hover .rr-sia__play-icon { transform: scale(1.08); }
+.rr-sia__play-icon svg { width: 22px; height: 22px; fill: #22344a; margin-left: 3px; }
+
+/* Slider arrows */
+.rr-sia__nav {
+  display: flex; justify-content: flex-end; gap: 10px;
+  margin-top: 20px;
+}
+.rr-sia__nav-btn {
+  width: 42px; height: 42px; border-radius: 50%;
+  border: 1.5px solid rgba(0,0,0,0.18);
+  background: transparent; color: #22344a;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.25s;
+}
+.rr-sia__nav-btn:hover { background: #22344a; color: #fff; border-color: #22344a; }
+.rr-sia__nav-btn svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+/* Testimonials row — three across on desktop, one per row on mobile */
+.rr-sia__testimonials {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Testimonial card */
+.rr-sia__testimonial {
+  display: flex; align-items: flex-start; gap: 18px;
+  padding: 22px 26px;
+  border: 1.5px dashed rgba(0,0,0,0.18);
+  border-radius: 18px;
+  background: transparent;
+  transition: opacity 0.3s;
+}
+.rr-sia__t-avatar {
+  flex-shrink: 0;
+  width: 60px; height: 60px; border-radius: 50%;
+  overflow: hidden;
+  background: #eee;
+}
+.rr-sia__t-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rr-sia__t-body { flex: 1; min-width: 0; }
+.rr-sia__t-head {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.rr-sia__t-name {
+  font-size: 15px; font-weight: 600; color: var(--s-text_color, #22344a);
+}
+.rr-sia__t-verified {
+  width: 16px; height: 16px;
+  background: #1DA1F2;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #fff;
+}
+.rr-sia__t-verified svg { width: 9px; height: 9px; stroke: currentColor; fill: none; stroke-width: 3; }
+.rr-sia__t-stars { display: flex; gap: 1px; color: #22344a; margin-left: 6px; }
+.rr-sia__t-stars svg { width: 13px; height: 13px; fill: currentColor; stroke: none; }
+.rr-sia__t-text {
+  font-size: 14px; line-height: 1.6;
+  color: var(--s-text_color, #22344a);
+  opacity: 0.82;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .rr-sia__card { flex: 0 0 calc((100% - 32px) / 3); }
+}
+@media (max-width: 768px) {
+  .rr-sia { padding: 56px 20px; }
+  .rr-sia__head { margin-bottom: 20px; }
+  .rr-sia__slider { gap: 12px; }
+  .rr-sia__card { flex: 0 0 60vw; }
+  .rr-sia__play-icon { width: 48px; height: 48px; }
+  .rr-sia__play-icon svg { width: 18px; height: 18px; }
+  .rr-sia__testimonials { grid-template-columns: 1fr; gap: 14px; margin-top: 22px; }
+  .rr-sia__testimonial { padding: 18px; gap: 14px; }
+  .rr-sia__t-avatar { width: 50px; height: 50px; }
+  .rr-sia__t-text { font-size: 13.5px; }
+}

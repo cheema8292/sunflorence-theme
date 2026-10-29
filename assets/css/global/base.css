@@ -1,0 +1,94 @@
+/* ═════════════ Sunflorence — base ═════════════
+   Brand palette (maroon · brown · bluish navy) and global resets.
+   Section styles live in assets/css/sections/. */
+
+:root {
+  --sf-maroon: #6E1F2F;
+  --sf-maroon-dark: #561724;
+  --sf-brown: #8A5A3B;
+  --sf-brown-light: #D9B99B;
+  --sf-navy: #22344A;
+  --sf-navy-dark: #1B2A3C;
+  --sf-bluish: #2B3F55;
+  --sf-cream: #FAF6F2;
+  --sf-oat: #F2EAD8;
+  --sf-text: #22344A;
+  --sf-muted: #6B7280;
+  --sf-line: #EDE7DF;
+  --sf-radius: 14px;
+  --sf-font-body: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --sf-font-heading: 'Cormorant Garamond', Georgia, serif;
+  /* aliases used by the converted Shopify sections */
+  --rr-mauve: var(--sf-brown);
+  --rr-oat: var(--sf-oat);
+  --font-body-family: var(--sf-font-body);
+  --font-heading-family: var(--sf-font-heading);
+  --font-body-family-override: var(--sf-font-body);
+  --font-heading-family-override: var(--sf-font-heading);
+}
+
+/* Global variables used by the Shopify product page CSS (values from the live theme settings) */
+:root{
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --global-button-padding-y: 18px;
+  --global-button-font-weight: 700;
+  --global-button-letter-spacing: -0.6px;
+  --global-button-text-transform: none;
+  --global-button-radius: 40px;
+  --letter-spacing-body: 0px;
+  --letter-spacing-heading: -0.9px;
+  }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--sf-font-body);
+  font-size: 15px; line-height: 1.6;
+  color: var(--sf-text);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, video { max-width: 100%; height: auto; }
+a { color: inherit; }
+button { font: inherit; }
+h1, h2, h3, h4 { font-family: var(--sf-font-heading); font-weight: 400; line-height: 1.15; color: var(--sf-navy); }
+:focus-visible { outline: 2px solid var(--sf-brown); outline-offset: 2px; }
+
+.sf-skip { position: absolute; left: -9999px; top: 8px; z-index: 1000; background: #fff; padding: 8px 14px; border-radius: 6px; }
+.sf-skip:focus { left: 8px; }
+.sf-hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }
+
+/* ── containers / generic pages ── */
+.sf-container { max-width: 1300px; margin: 0 auto; padding: 0 40px; }
+.sf-page { padding-top: 48px; padding-bottom: 88px; }
+.sf-page__head { margin-bottom: 28px; }
+.sf-page__title { font-size: clamp(32px, 4vw, 52px); margin: 0; }
+.sf-prose { max-width: 820px; font-size: 15px; line-height: 1.8; }
+.sf-prose h2 { font-size: 30px; margin: 1.6em 0 .5em; }
+.sf-prose h3 { font-size: 22px; margin: 1.4em 0 .4em; }
+.sf-prose a { color: var(--sf-maroon); }
+.sf-page--wc .sf-prose { max-width: none; }
+
+/* blog list */
+.sf-posts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.sf-post-card { background: #fff; border: 1px solid var(--sf-line); border-radius: 18px; overflow: hidden; }
+.sf-post-card__img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+.sf-post-card__body { padding: 18px 20px 22px; }
+.sf-post-card__date { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--sf-brown); margin: 0 0 6px; }
+.sf-post-card__title { font-size: 24px; margin: 0 0 8px; }
+.sf-post-card__title a { text-decoration: none; }
+
+/* WooCommerce price html inside cards (del / ins) */
+.rr-cs-card__price del { opacity: .55; font-weight: 400; font-size: 12px; order: 2; }
+.rr-cs-card__price ins { text-decoration: none; color: var(--cs-accent, var(--sf-maroon)); }
+.rr-cs-card__price .woocommerce-Price-amount { white-space: nowrap; }
+
+@media (max-width: 1024px) { .sf-posts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 768px) {
+  .sf-container { padding: 0 16px; }
+  .sf-page { padding-top: 32px; padding-bottom: 56px; }
+  .sf-posts { grid-template-columns: 1fr; }
+}

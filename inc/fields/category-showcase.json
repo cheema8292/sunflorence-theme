@@ -1,0 +1,274 @@
+{
+ "label": "Category showcase",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_category-showcase_layout",
+   "name": "layout",
+   "label": "Design",
+   "instructions": "",
+   "type": "select",
+   "choices": {
+    "spotlight": "Spotlight — featured slider + tabbed grid",
+    "slider": "Slider — promo tile + scrolling row",
+    "banner": "Banner — image banner, products overlap",
+    "dark": "Dark — glass cards on dark background",
+    "lookbook": "Lookbook — tall image + product list"
+   },
+   "default_value": "spotlight"
+  },
+  {
+   "key": "field_sf_category-showcase_msg_010131",
+   "name": "",
+   "label": "Heading",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_category-showcase_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Shop the category"
+  },
+  {
+   "key": "field_sf_category-showcase_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "Italic text is shown in the accent colour.",
+   "type": "text",
+   "default_value": "Category <em>name</em>"
+  },
+  {
+   "key": "field_sf_category-showcase_subheading",
+   "name": "subheading",
+   "label": "Subheading",
+   "instructions": "",
+   "type": "text",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_category-showcase_msg_068f80",
+   "name": "",
+   "label": "Products",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_category-showcase_collection",
+   "name": "collection",
+   "label": "Main Category",
+   "instructions": "Used when no subcategory tabs are added, and for the View all link.",
+   "type": "taxonomy",
+   "taxonomy": "product_cat",
+   "field_type": "select",
+   "return_format": "id",
+   "allow_null": 1,
+   "add_term": 0
+  },
+  {
+   "key": "field_sf_category-showcase_products_count",
+   "name": "products_count",
+   "label": "Products per tab",
+   "instructions": "Spotlight looks best with 5 or 9, Lookbook with 4.",
+   "type": "number",
+   "default_value": 8,
+   "min": 2,
+   "max": 12,
+   "step": 1,
+   "append": ""
+  },
+  {
+   "key": "field_sf_category-showcase_view_all_text",
+   "name": "view_all_text",
+   "label": "View all text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "View all"
+  },
+  {
+   "key": "field_sf_category-showcase_view_all_url",
+   "name": "view_all_url",
+   "label": "View all link (optional)",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_category-showcase_msg_b0855f",
+   "name": "",
+   "label": "Featured slider",
+   "instructions": "Spotlight design only. One slide per subcategory tab, each showing a random product from it.",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_category-showcase_feature_label",
+   "name": "feature_label",
+   "label": "Slide label prefix",
+   "instructions": "",
+   "type": "text",
+   "default_value": "From"
+  },
+  {
+   "key": "field_sf_category-showcase_feature_pool",
+   "name": "feature_pool",
+   "label": "Pick the random product from the first … products",
+   "instructions": "",
+   "type": "number",
+   "default_value": 8,
+   "min": 1,
+   "max": 12,
+   "step": 1,
+   "append": ""
+  },
+  {
+   "key": "field_sf_category-showcase_autoplay_speed",
+   "name": "autoplay_speed",
+   "label": "Time per slide",
+   "instructions": "",
+   "type": "number",
+   "default_value": 4,
+   "min": 2,
+   "max": 10,
+   "step": 1,
+   "append": "s"
+  },
+  {
+   "key": "field_sf_category-showcase_msg_be53a0",
+   "name": "",
+   "label": "Image",
+   "instructions": "Used by the Slider (promo tile), Banner and Lookbook designs.",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_category-showcase_image",
+   "name": "image",
+   "label": "Image",
+   "instructions": "",
+   "type": "image",
+   "return_format": "id",
+   "preview_size": "medium"
+  },
+  {
+   "key": "field_sf_category-showcase_image_title",
+   "name": "image_title",
+   "label": "Image title",
+   "instructions": "Slider design: the promo tile only shows when this is filled.",
+   "type": "text",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_category-showcase_image_text",
+   "name": "image_text",
+   "label": "Image text",
+   "instructions": "",
+   "type": "text",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_category-showcase_image_button",
+   "name": "image_button",
+   "label": "Image button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Shop now"
+  },
+  {
+   "key": "field_sf_category-showcase_image_url",
+   "name": "image_url",
+   "label": "Image link",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_category-showcase_msg_7add29",
+   "name": "",
+   "label": "Colours",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_category-showcase_bg_color",
+   "name": "bg_color",
+   "label": "Background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FAF6F2"
+  },
+  {
+   "key": "field_sf_category-showcase_text_color",
+   "name": "text_color",
+   "label": "Text",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344A"
+  },
+  {
+   "key": "field_sf_category-showcase_accent_color",
+   "name": "accent_color",
+   "label": "Accent",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#6E1F2F"
+  },
+  {
+   "key": "field_sf_category-showcase_card_color",
+   "name": "card_color",
+   "label": "Card background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_category-showcase_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 88,
+   "min": 24,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_category-showcase_blocks_tab",
+   "name": "blocks_tab",
+   "label": "Subcategory tabs",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add subcategory tab",
+   "max": 8,
+   "sub_fields": [
+    {
+     "key": "field_sf_category-showcase_tab_collection",
+     "name": "collection",
+     "label": "Category",
+     "instructions": "The tab shows this collection's products live.",
+     "type": "taxonomy",
+     "taxonomy": "product_cat",
+     "field_type": "select",
+     "return_format": "id",
+     "allow_null": 1,
+     "add_term": 0
+    },
+    {
+     "key": "field_sf_category-showcase_tab_label",
+     "name": "label",
+     "label": "Tab label (optional)",
+     "instructions": "Leave blank to use the collection name.",
+     "type": "text",
+     "default_value": ""
+    }
+   ]
+  }
+ ]
+}

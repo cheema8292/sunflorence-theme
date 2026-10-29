@@ -1,0 +1,71 @@
+{
+ "label": "Track order page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_track-order_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Order Status"
+  },
+  {
+   "key": "field_sf_track-order_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Track"
+  },
+  {
+   "key": "field_sf_track-order_heading_italic",
+   "name": "heading_italic",
+   "label": "Heading italic",
+   "instructions": "",
+   "type": "text",
+   "default_value": "My Order"
+  },
+  {
+   "key": "field_sf_track-order_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Stay up to date on your delivery. Enter your details below to check your order status."
+  },
+  {
+   "key": "field_sf_track-order_btn_text",
+   "name": "btn_text",
+   "label": "Button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Track Order"
+  },
+  {
+   "key": "field_sf_track-order_support_email",
+   "name": "support_email",
+   "label": "Support email",
+   "instructions": "",
+   "type": "text",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_track-order_account_url",
+   "name": "account_url",
+   "label": "Account login URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_track-order_body_bg",
+   "name": "body_bg",
+   "label": "Body background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FAF6F2"
+  }
+ ]
+}

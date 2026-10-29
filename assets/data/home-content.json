@@ -1,0 +1,534 @@
+[
+ {
+  "acf_fc_layout": "hero",
+  "autoplay_speed": 5,
+  "curve_radius": 120,
+  "blocks_slide": [
+   {
+    "bg_fallback": "#1b2a3c",
+    "focus_x": 50,
+    "focus_y": 50,
+    "badge_text": "Skin Care • Makeup • Hair • K-Beauty",
+    "heading": "Beauty For Every You,",
+    "heading_italic": "All In One Place.",
+    "subtext": "Skin care, makeup, hair care, personal care and K-Beauty favourites, handpicked for your everyday routine.",
+    "btn1_text": "Shop Now",
+    "btn1_url": "/collections/all",
+    "btn2_text": "",
+    "btn2_url": ""
+   },
+   {
+    "bg_fallback": "#1b2a3c",
+    "focus_x": 50,
+    "focus_y": 50,
+    "badge_text": "New Collection",
+    "heading": "Your Glow,",
+    "heading_italic": "Your Way.",
+    "subtext": "Cleansers, moisturizers and facial treatments for fresh, healthy-looking skin every day.",
+    "btn1_text": "Shop Skin Care",
+    "btn1_url": "/collections/skin-care",
+    "btn2_text": "",
+    "btn2_url": "/collections/mackups"
+   },
+   {
+    "bg_fallback": "#1b2a3c",
+    "focus_x": 50,
+    "focus_y": 50,
+    "badge_text": "Secure Checkout • 30-Day Returns",
+    "heading": "K-Beauty Favourites,",
+    "heading_italic": "Delivered To You.",
+    "subtext": "Discover Korean beauty essentials and premium makeup sets, with secure checkout and flexible payment.",
+    "btn1_text": "Shop K-Beauty",
+    "btn1_url": "/collections/k-beauty",
+    "btn2_text": "",
+    "btn2_url": ""
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "brand-logos",
+  "logo_height": 44,
+  "logo_height_mobile": 32,
+  "gap": 80,
+  "speed": 40,
+  "pause_on_hover": true,
+  "grayscale": false,
+  "fade_edges": true,
+  "aria_label": "Brands we carry",
+  "padding_top": 40,
+  "padding_bottom": 40,
+  "blocks_brand": [
+   {
+    "name": "PHOFAY",
+    "link": "/collections/vendors?q=PHOFAY"
+   },
+   {
+    "name": "medicube",
+    "link": "/collections/vendors?q=medicube"
+   },
+   {
+    "name": "Centella",
+    "link": "/collections/vendors?q=Centella"
+   },
+   {
+    "name": "LUXE",
+    "link": "/collections/vendors?q=LUXE"
+   },
+   {
+    "name": "REVELON",
+    "link": "/collections/vendors?q=REVELON"
+   },
+   {
+    "name": "bareMinerals",
+    "link": "/collections/vendors?q=bareMinerals"
+   },
+   {
+    "name": "Avon",
+    "link": "/collections/vendors?q=Avon"
+   },
+   {
+    "name": "SEPHORA",
+    "link": "/collections/vendors?q=SEPHORA"
+   },
+   {
+    "name": "NARS",
+    "link": "/collections/vendors?q=NARS"
+   },
+   {
+    "name": "LANEIGE",
+    "link": "/collections/vendors?q=LANEIGE"
+   },
+   {
+    "name": "CeraVe",
+    "link": "/collections/vendors?q=CeraVe"
+   },
+   {
+    "name": "The Ordinary",
+    "link": "/collections/vendors?q=The%20Ordinary"
+   },
+   {
+    "name": "VT Cosmetics",
+    "link": "/collections/vendors?q=VT%20Cosmetics"
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "banner-grid",
+  "layout": "tiles",
+  "heading": "Shop By <em>Category</em>",
+  "show_text": true,
+  "blocks_banner": [
+   {
+    "category": "skin-care",
+    "button": "Shop Now"
+   },
+   {
+    "category": "mackups",
+    "button": "Shop Now"
+   },
+   {
+    "category": "hair-care",
+    "button": "Shop Now"
+   },
+   {
+    "category": "k-beauty",
+    "button": "Shop Now"
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "featured-products",
+  "heading": "Deals Of The Day",
+  "link_text": "View All Products",
+  "link_url": "/collections/all",
+  "collection": "",
+  "products_count": 8,
+  "show_rating": true,
+  "bg_color": "#ffffff",
+  "padding_vertical": 104,
+  "padding_horizontal": 52
+ },
+ {
+  "acf_fc_layout": "banner-grid",
+  "layout": "split",
+  "heading": "",
+  "show_text": true,
+  "blocks_banner": [
+   {
+    "category": "personal-care",
+    "button": "Shop Now"
+   },
+   {
+    "category": "k-vibes-fashion",
+    "button": "Shop Now"
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "category-showcase",
+  "layout": "spotlight",
+  "eyebrow": "Skin Care",
+  "heading": "Healthy skin, <em>every day</em>",
+  "subheading": "Cleansers, treatments, moisturizers and body care for a fresh, glowing complexion.",
+  "collection": "skin-care",
+  "products_count": 4,
+  "view_all_text": "Shop all skin care",
+  "image_button": "Shop now",
+  "bg_color": "#F3EEE8",
+  "text_color": "#22344A",
+  "accent_color": "#8A5A3B",
+  "card_color": "#FFFFFF",
+  "padding_vertical": 88,
+  "feature_label": "From",
+  "feature_pool": 8,
+  "autoplay_speed": 4,
+  "blocks_tab": [
+   {
+    "collection": "cleansers",
+    "label": ""
+   },
+   {
+    "collection": "facial-treatment",
+    "label": ""
+   },
+   {
+    "collection": "moisturizers",
+    "label": ""
+   },
+   {
+    "collection": "body-care",
+    "label": ""
+   },
+   {
+    "collection": "skin-concerns",
+    "label": ""
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "makeup-edit",
+  "eyebrow": "The Makeup Edit",
+  "heading": "Glow, define & <em>express</em>",
+  "subheading": "Lips, eyes and complexion favourites — curated shades for every skin tone, from soft everyday nudes to bold statement colour.",
+  "show_swatches": true,
+  "swatch_1": "#f4c7c3",
+  "swatch_2": "#e8a0a8",
+  "swatch_3": "#c9566e",
+  "swatch_4": "#8e2c48",
+  "swatch_5": "#c68e6e",
+  "swatch_6": "#e9cbb7",
+  "collection": "",
+  "products_count": 6,
+  "columns": 3,
+  "view_all_text": "Shop all makeup",
+  "view_all_url": "",
+  "show_promo": true,
+  "promo_tag": "New season",
+  "promo_title": "Your signature look starts here",
+  "promo_text": "Long-wear lips, buildable blush and K-Beauty glow essentials.",
+  "promo_button": "Shop makeup",
+  "promo_url": "",
+  "bg_color": "#fdf4f2",
+  "blush_color": "#f9e1e0",
+  "rose_color": "#e8a0a8",
+  "berry_color": "#a3324f",
+  "plum_color": "#3b1424",
+  "gold_color": "#d4af7a",
+  "padding_vertical": 96,
+  "padding_horizontal": 40,
+  "blocks_tab": [
+   {
+    "collection": "mackups",
+    "label": ""
+   },
+   {
+    "collection": "face",
+    "label": ""
+   },
+   {
+    "collection": "eyes",
+    "label": ""
+   },
+   {
+    "collection": "k-beauty",
+    "label": ""
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "image-banner",
+  "image_focus_x": 50,
+  "image_focus_y": 50,
+  "overlay_color": "#000000",
+  "overlay_opacity": 20,
+  "eyebrow": "",
+  "heading": "Premium quality products, handpicked for you",
+  "subtext": "Discover our exclusive collection of handpicked beauty and personal care items designed to elevate your lifestyle, from everyday skin care to complete makeup sets.",
+  "btn_text": "Shop Now",
+  "btn_url": "/collections/all",
+  "text_color": "#ffffff",
+  "content_horizontal": "flex-start",
+  "content_vertical": "center",
+  "banner_height": 680,
+  "banner_height_mobile": 520,
+  "corner_radius": 24,
+  "corner_radius_br": 140,
+  "corner_radius_mobile": 16,
+  "corner_radius_br_mobile": 80,
+  "section_bg": "#ffffff",
+  "padding_vertical": 48,
+  "padding_horizontal": 32
+ },
+ {
+  "acf_fc_layout": "category-showcase",
+  "layout": "slider",
+  "eyebrow": "Personal Care",
+  "heading": "Fresh from <em>morning to night</em>",
+  "subheading": "Oral care and everyday hygiene essentials for confident, fresh days.",
+  "collection": "personal-care",
+  "products_count": 8,
+  "view_all_text": "Shop personal care",
+  "image_title": "Everyday fresh essentials",
+  "image_text": "Oral care sprays, solutions and hygiene must-haves.",
+  "image_button": "Shop now",
+  "image_url": "/collections/personal-care",
+  "bg_color": "#EEF2F6",
+  "text_color": "#22344A",
+  "accent_color": "#2B3F55",
+  "card_color": "#FFFFFF",
+  "padding_vertical": 88,
+  "blocks_tab": [
+   {
+    "collection": "personal-care",
+    "label": ""
+   },
+   {
+    "collection": "oral-care",
+    "label": ""
+   },
+   {
+    "collection": "hygiene",
+    "label": ""
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "category-showcase",
+  "layout": "banner",
+  "eyebrow": "Hair Care",
+  "heading": "Love your hair, <em>every wash</em>",
+  "subheading": "Shampoos, conditioners and treatments for soft, shiny, healthy-looking hair.",
+  "collection": "hair-care",
+  "products_count": 4,
+  "view_all_text": "Shop hair care",
+  "image_button": "Shop now",
+  "bg_color": "#FFFFFF",
+  "text_color": "#22344A",
+  "accent_color": "#6E1F2F",
+  "card_color": "#FFFFFF",
+  "padding_vertical": 80,
+  "blocks_tab": [
+   {
+    "collection": "hair-care",
+    "label": ""
+   },
+   {
+    "collection": "shampoos-and-conditioners",
+    "label": ""
+   },
+   {
+    "collection": "hair-treatment",
+    "label": ""
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "category-showcase",
+  "layout": "dark",
+  "eyebrow": "K-Beauty",
+  "heading": "Korean beauty, <em>glass-skin glow</em>",
+  "subheading": "The Korean skin care and makeup favourites everyone is talking about.",
+  "collection": "k-beauty",
+  "products_count": 10,
+  "view_all_text": "Shop all K-Beauty",
+  "image_button": "Shop now",
+  "bg_color": "#22344A",
+  "text_color": "#F3EDE6",
+  "accent_color": "#E8A0A8",
+  "card_color": "#FFFFFF",
+  "padding_vertical": 96
+ },
+ {
+  "acf_fc_layout": "see-in-action",
+  "heading": "Loved by our customers",
+  "badge_text": "Follow us on Instagram",
+  "badge_url": "",
+  "show_testimonial": true,
+  "bg_color": "#ffffff",
+  "text_color": "#22344a",
+  "accent_color": "#8a5a3b",
+  "padding_vertical": 88,
+  "padding_horizontal": 32,
+  "blocks_video_card": [
+   {
+    "video_url": "",
+    "reviewer_name": "Emily R.",
+    "verified": true,
+    "rating": 5,
+    "review_text": "The cleanser is so gentle and leaves my skin feeling fresh and soft. Fast delivery too!"
+   },
+   {
+    "video_url": "",
+    "reviewer_name": "Hannah K.",
+    "verified": true,
+    "rating": 5,
+    "review_text": "The makeup brush set is beautiful quality. Soft bristles and great for blending."
+   },
+   {
+    "video_url": "",
+    "reviewer_name": "Sophia M.",
+    "verified": true,
+    "rating": 5,
+    "review_text": "I bought the makeup set for my kit and it has everything I need. Great value for the price."
+   },
+   {
+    "video_url": "",
+    "reviewer_name": "Olivia T.",
+    "verified": true,
+    "rating": 5,
+    "review_text": "Love the coconut shampoo and conditioner set. My hair smells amazing and feels so smooth."
+   },
+   {
+    "video_url": "",
+    "reviewer_name": "Grace L.",
+    "verified": true,
+    "rating": 5,
+    "review_text": "My go-to store for K-Beauty. Everything arrived well packed and exactly as described."
+   },
+   {
+    "video_url": "",
+    "reviewer_name": "Mia S.",
+    "verified": true,
+    "rating": 5,
+    "review_text": "The blusher gives the most natural nude look. I wear it every day now."
+   },
+   {
+    "video_url": "",
+    "reviewer_name": "Chloe D.",
+    "verified": true,
+    "rating": 5,
+    "review_text": "Great customer support. They answered all my questions quickly and my order came on time."
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "routine-steps",
+  "heading": "Discover your routine",
+  "subtext": "Build a simple daily skin care routine in three easy steps for clean, balanced and hydrated skin.",
+  "auto_speed": 3,
+  "bg_color": "#faf7f2",
+  "text_color": "#22344a",
+  "card_radius": 16,
+  "padding_vertical": 96,
+  "padding_horizontal": 32,
+  "blocks_step": [
+   {
+    "title": "Cleanse",
+    "desc": "Gently remove dirt, oil and makeup with a facial cleanser."
+   },
+   {
+    "title": "Treat",
+    "desc": "Apply a facial treatment to target your skin concerns."
+   },
+   {
+    "title": "Moisturize",
+    "desc": "Lock in hydration for soft, smooth and healthy-looking skin."
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "tested-proven",
+  "left_heading": "Why shop with Sunflorence?",
+  "left_body": "<p>We bring together skin care, makeup, hair care, personal care and K-Beauty favourites in one place, with tracked shipping, secure payment and friendly support whenever you need it.</p>",
+  "left_text_color": "#22344a",
+  "image_focus_x": 50,
+  "image_focus_y": 50,
+  "overlay_color": "#8a5a3b",
+  "overlay_opacity": 0,
+  "right_heading": "Product spotlight",
+  "product_name": "Makeup Set for Makeup Artist",
+  "product_sub": "Complete Professional Kit",
+  "footnote": "",
+  "right_text_color": "#ffffff",
+  "min_height": 640,
+  "curve_radius": 120,
+  "section_bg": "#ffffff",
+  "padding_vertical": 48,
+  "padding_horizontal": 32,
+  "blocks_stat": [
+   {
+    "number": "50+",
+    "text": "Countries we ship to worldwide."
+   },
+   {
+    "number": "30",
+    "text": "Day return policy on all items."
+   },
+   {
+    "number": "24/7",
+    "text": "Dedicated customer support."
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "faq-accordion",
+  "heading": "Answers To Your Questions",
+  "subtext": "",
+  "first_open": false,
+  "single_open": true,
+  "cta_text": "Any question about our products?",
+  "btn_text": "See Our FAQs",
+  "btn_url": "/pages/faq",
+  "bg_color": "#ffffff",
+  "text_color": "#22344a",
+  "btn_bg": "#22344a",
+  "btn_color": "#ffffff",
+  "padding_vertical": 96,
+  "padding_horizontal": 32,
+  "blocks_faq": [
+   {
+    "question": "What is your return policy?",
+    "answer": "<p>We offer a 30-day return policy on all items. Products must be in their original condition with tags attached.</p>"
+   },
+   {
+    "question": "How long does shipping take?",
+    "answer": "<p>Standard shipping typically takes 5-7 business days. Express shipping options are available at checkout.</p>"
+   },
+   {
+    "question": "Do you ship internationally?",
+    "answer": "<p>Yes, we ship to over 50 countries worldwide. International shipping rates are calculated at checkout.</p>"
+   },
+   {
+    "question": "How can I track my order?",
+    "answer": "<p>Once your order ships, you'll receive a tracking number via email. You can use this to monitor your delivery status.</p>"
+   },
+   {
+    "question": "What payment methods do you accept?",
+    "answer": "<p>We accept all major credit cards, PayPal, Apple Pay, and Google Pay for your convenience.</p>"
+   },
+   {
+    "question": "Can I modify my order after placing it?",
+    "answer": "<p>Please contact us immediately if you need to modify your order. We'll do our best to accommodate changes before shipping.</p>"
+   }
+  ]
+ },
+ {
+  "acf_fc_layout": "featured-products",
+  "heading": "New Arrivals",
+  "link_text": "View All New Arrivals",
+  "link_url": "/shop/?orderby=date",
+  "collection": "",
+  "products_count": 8,
+  "bg_color": "#FFFFFF"
+ }
+]

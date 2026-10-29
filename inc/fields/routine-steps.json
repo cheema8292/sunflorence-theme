@@ -1,0 +1,149 @@
+{
+ "label": "Routine steps",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_routine-steps_msg_2ed7a2",
+   "name": "",
+   "label": "Section header",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_routine-steps_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Discover your routine"
+  },
+  {
+   "key": "field_sf_routine-steps_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Kickstart your routine with an essential starter set. Each step cleanses, treats and hydrates your skin."
+  },
+  {
+   "key": "field_sf_routine-steps_msg_1f07af",
+   "name": "",
+   "label": "Behaviour",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_routine-steps_auto_speed",
+   "name": "auto_speed",
+   "label": "Auto-rotate speed (seconds)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 3,
+   "min": 2,
+   "max": 8,
+   "step": 1,
+   "append": "s"
+  },
+  {
+   "key": "field_sf_routine-steps_msg_ae284f",
+   "name": "",
+   "label": "Style",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_routine-steps_bg_color",
+   "name": "bg_color",
+   "label": "Background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FAF7F2"
+  },
+  {
+   "key": "field_sf_routine-steps_text_color",
+   "name": "text_color",
+   "label": "Text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_routine-steps_card_radius",
+   "name": "card_radius",
+   "label": "Card corner radius (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 16,
+   "min": 0,
+   "max": 60,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_routine-steps_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 96,
+   "min": 40,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_routine-steps_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 32,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_routine-steps_blocks_step",
+   "name": "blocks_step",
+   "label": "Steps",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add step",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_routine-steps_step_image",
+     "name": "image",
+     "label": "Image",
+     "instructions": "",
+     "type": "image",
+     "return_format": "id",
+     "preview_size": "medium"
+    },
+    {
+     "key": "field_sf_routine-steps_step_title",
+     "name": "title",
+     "label": "Title (label on image)",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Cleanse"
+    },
+    {
+     "key": "field_sf_routine-steps_step_desc",
+     "name": "desc",
+     "label": "Description (optional)",
+     "instructions": "",
+     "type": "textarea",
+     "rows": 3,
+     "default_value": ""
+    }
+   ]
+  }
+ ]
+}

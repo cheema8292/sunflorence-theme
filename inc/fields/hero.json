@@ -1,0 +1,180 @@
+{
+ "label": "Hero slider",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_hero_autoplay_speed",
+   "name": "autoplay_speed",
+   "label": "Slide duration (seconds)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 5,
+   "min": 3,
+   "max": 10,
+   "step": 1,
+   "append": ""
+  },
+  {
+   "key": "field_sf_hero_curve_radius",
+   "name": "curve_radius",
+   "label": "Bottom-right corner radius (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 80,
+   "min": 0,
+   "max": 120,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_hero_blocks_slide",
+   "name": "blocks_slide",
+   "label": "Slides",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add slide",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_hero_slide_msg_a9ded1",
+     "name": "",
+     "label": "Background",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_hero_slide_image",
+     "name": "image",
+     "label": "Background image",
+     "instructions": "",
+     "type": "image",
+     "return_format": "id",
+     "preview_size": "medium"
+    },
+    {
+     "key": "field_sf_hero_slide_bg_fallback",
+     "name": "bg_fallback",
+     "label": "Fallback colour (shown before image loads)",
+     "instructions": "",
+     "type": "color_picker",
+     "default_value": "#1b2a3c"
+    },
+    {
+     "key": "field_sf_hero_slide_focus_x",
+     "name": "focus_x",
+     "label": "Image focus — horizontal",
+     "instructions": "0 = left edge, 100 = right edge",
+     "type": "number",
+     "default_value": 50,
+     "min": 0,
+     "max": 100,
+     "step": 5,
+     "append": "%"
+    },
+    {
+     "key": "field_sf_hero_slide_focus_y",
+     "name": "focus_y",
+     "label": "Image focus — vertical",
+     "instructions": "0 = top, 100 = bottom",
+     "type": "number",
+     "default_value": 50,
+     "min": 0,
+     "max": 100,
+     "step": 5,
+     "append": "%"
+    },
+    {
+     "key": "field_sf_hero_slide_msg_454a5c",
+     "name": "",
+     "label": "Badge",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_hero_slide_badge_text",
+     "name": "badge_text",
+     "label": "Badge text",
+     "instructions": "Use {count} where the number should appear.",
+     "type": "text",
+     "default_value": "Trusted by {count}+ Customers"
+    },
+    {
+     "key": "field_sf_hero_slide_msg_010131",
+     "name": "",
+     "label": "Heading",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_hero_slide_heading",
+     "name": "heading",
+     "label": "Line 1",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Beauty For Every You,"
+    },
+    {
+     "key": "field_sf_hero_slide_heading_italic",
+     "name": "heading_italic",
+     "label": "Line 2 (italic)",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Naturally Crafted."
+    },
+    {
+     "key": "field_sf_hero_slide_subtext",
+     "name": "subtext",
+     "label": "Subtext",
+     "instructions": "",
+     "type": "textarea",
+     "rows": 3,
+     "default_value": "Skin care, makeup, hair care, personal care and K-Beauty favourites, handpicked for you."
+    },
+    {
+     "key": "field_sf_hero_slide_msg_5b3ec1",
+     "name": "",
+     "label": "Buttons",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_hero_slide_btn1_text",
+     "name": "btn1_text",
+     "label": "Primary button text",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Shop Now"
+    },
+    {
+     "key": "field_sf_hero_slide_btn1_url",
+     "name": "btn1_url",
+     "label": "Primary button URL",
+     "instructions": "",
+     "type": "url",
+     "default_value": ""
+    },
+    {
+     "key": "field_sf_hero_slide_btn2_text",
+     "name": "btn2_text",
+     "label": "Secondary button text",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Learn More"
+    },
+    {
+     "key": "field_sf_hero_slide_btn2_url",
+     "name": "btn2_url",
+     "label": "Secondary button URL",
+     "instructions": "",
+     "type": "url",
+     "default_value": ""
+    }
+   ]
+  }
+ ]
+}

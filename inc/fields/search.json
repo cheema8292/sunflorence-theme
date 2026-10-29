@@ -1,0 +1,50 @@
+{
+ "label": "Search page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_search_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Search"
+  },
+  {
+   "key": "field_sf_search_heading",
+   "name": "heading",
+   "label": "Heading (no query)",
+   "instructions": "",
+   "type": "text",
+   "default_value": "What are you looking for?"
+  },
+  {
+   "key": "field_sf_search_placeholder",
+   "name": "placeholder",
+   "label": "Input placeholder",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Search skin care, makeup, hair care..."
+  },
+  {
+   "key": "field_sf_search_blocks_suggestion",
+   "name": "blocks_suggestion",
+   "label": "Search Suggestions",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add search suggestion",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_search_suggestion_term",
+     "name": "term",
+     "label": "Search term",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Facial Cleanser"
+    }
+   ]
+  }
+ ]
+}

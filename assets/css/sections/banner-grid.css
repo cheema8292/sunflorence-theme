@@ -1,0 +1,43 @@
+/* Banner grid — category tiles / 2 banners / full-width banner (like theskinfit.com) */
+.sf-bg { padding: 24px var(--sf-edge, 40px); }
+.sf-bg__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; color: #22344a;
+  font-size: clamp(24px, 2.4vw, 34px); line-height: 1.1; margin: 0 0 16px; text-align: center;
+}
+.sf-bg__heading em { font-style: italic; color: var(--sf-maroon, #6E1F2F); }
+.sf-bg__grid { display: grid; gap: 12px; }
+.sf-bg--tiles .sf-bg__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.sf-bg--split .sf-bg__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.sf-bg--wide .sf-bg__grid { grid-template-columns: 1fr; }
+
+.sf-bg__item {
+  position: relative; display: block; overflow: hidden; border-radius: 8px;
+  background: linear-gradient(150deg, var(--sf-oat, #F2EAD8), #E8DCCB);
+  text-decoration: none; color: #fff; isolation: isolate;
+}
+.sf-bg--tiles .sf-bg__item { aspect-ratio: 1 / 1; }
+.sf-bg--split .sf-bg__item { aspect-ratio: 672 / 417; }
+.sf-bg--wide .sf-bg__item { aspect-ratio: 1350 / 296; }
+.sf-bg__media, .sf-bg__media img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.sf-bg__media img { object-fit: cover; transition: transform .6s ease; }
+.sf-bg__item:hover .sf-bg__media img { transform: scale(1.04); }
+
+.sf-bg__text {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
+  display: flex; flex-direction: column; gap: 4px; padding: 48px 18px 16px;
+  background: linear-gradient(to top, rgba(20, 24, 33, .72), rgba(20, 24, 33, 0));
+}
+.sf-bg__item--empty .sf-bg__text { inset: 0; justify-content: flex-end; background: none; color: #22344a; }
+.sf-bg__title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(20px, 1.9vw, 30px); line-height: 1.05; }
+.sf-bg--wide .sf-bg__title { font-size: clamp(26px, 3vw, 46px); }
+.sf-bg__sub { font-size: 12px; opacity: .9; }
+.sf-bg__btn { font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; margin-top: 4px; }
+
+@media (max-width: 640px) {
+  .sf-bg { padding: 16px var(--sf-edge, 16px); }
+  .sf-bg__grid { gap: 8px; }
+  .sf-bg--tiles .sf-bg__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sf-bg--split .sf-bg__grid { grid-template-columns: 1fr; }
+  .sf-bg--wide .sf-bg__item { aspect-ratio: 16 / 9; }
+  .sf-bg__text { padding: 36px 12px 12px; }
+}

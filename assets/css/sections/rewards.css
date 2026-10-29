@@ -1,0 +1,145 @@
+/* Rewards banner — converted from Shopify rr-rewards.liquid */
+
+.rr-rw {
+  background: var(--s-section_bg, #FFFFFF);
+  padding: calc(var(--s-padding_vertical, 48) * 1px) calc(var(--s-padding_horizontal, 32) * 1px);
+  font-family: 'Montserrat', var(--font-body-family), sans-serif;
+}
+.rr-rw__inner {
+  max-width: 1340px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* ── LEFT: image with badge overlay ── */
+.rr-rw__left {
+  position: relative;
+  border-radius: calc(var(--s-left_corner_radius, 24) * 1px) calc(var(--s-left_corner_radius, 24) * 1px) calc(var(--s-left_corner_radius, 24) * 1px) calc(var(--s-left_corner_radius_br, 140) * 1px);
+  overflow: hidden;
+  min-height: calc(var(--s-min_height, 560) * 1px);
+}
+.rr-rw__left-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: calc(var(--s-image_focus_x, 50) * 1%) calc(var(--s-image_focus_y, 50) * 1%);
+  z-index: 1;
+}
+.rr-rw__left-badge {
+  position: absolute;
+  left: 50%;
+  bottom: 56px;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: 22px 50px;
+  border: 1.5px solid var(--s-badge_border_color, #FFFFFF);
+  border-radius: 14px;
+  text-align: center;
+  background: transparent;
+  color: var(--s-badge_text_color, #FFFFFF);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+.rr-rw__left-badge-top {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--s-badge_text_color, #FFFFFF);
+  margin: 0 0 6px;
+}
+.rr-rw__left-badge-main {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 44px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--s-badge_text_color, #FFFFFF);
+  line-height: 1;
+  margin: 0;
+}
+
+/* ── RIGHT: solid colour panel with content ── */
+.rr-rw__right {
+  background: var(--s-right_bg, #F8C4D2);
+  border-radius: calc(var(--s-right_corner_radius, 24) * 1px);
+  padding: 72px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--s-right_text_color, #22344a);
+  min-height: calc(var(--s-min_height, 560) * 1px);
+}
+.rr-rw__right-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(30px, 3.2vw, 46px);
+  font-weight: 500;
+  color: var(--s-right_text_color, #22344a);
+  line-height: 1.1;
+  margin: 0 0 22px;
+  letter-spacing: -0.3px;
+}
+.rr-rw__right-body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--s-right_text_color, #22344a);
+  margin: 0 0 38px;
+  max-width: 440px;
+}
+.rr-rw__actions {
+  display: flex; align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.rr-rw__btn-primary {
+  display: inline-flex; align-items: center;
+  padding: 16px 36px;
+  border-radius: 999px;
+  background: var(--s-btn_bg, #FFFFFF);
+  color: var(--s-btn_color, #22344a);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--s-btn_bg, #FFFFFF);
+  transition: all 0.25s;
+}
+.rr-rw__btn-primary:hover {
+  background: transparent;
+  color: var(--s-btn_bg, #FFFFFF);
+}
+.rr-rw__btn-secondary {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--s-right_text_color, #22344a);
+  transition: opacity 0.2s;
+}
+.rr-rw__btn-secondary:hover { opacity: 0.65; }
+
+@media (max-width: 1024px) {
+  .rr-rw__inner { grid-template-columns: 1fr; gap: 16px; }
+  .rr-rw__left { min-height: 520px; }
+  .rr-rw__right { padding: 56px 36px; min-height: auto; }
+}
+@media (max-width: 640px) {
+  .rr-rw { padding: 40px 16px; }
+  .rr-rw__left { min-height: 420px; }
+  .rr-rw__left-badge { padding: 16px 30px; bottom: 36px; }
+  .rr-rw__left-badge-top { font-size: 11px; letter-spacing: 3px; }
+  .rr-rw__left-badge-main { font-size: 32px; }
+  .rr-rw__right { padding: 44px 28px; }
+  .rr-rw__right-heading { font-size: clamp(24px, 7vw, 32px); margin-bottom: 16px; }
+  .rr-rw__right-body { font-size: 13.5px; margin-bottom: 28px; }
+  .rr-rw__btn-primary { padding: 13px 28px; font-size: 11px; }
+}

@@ -1,0 +1,13 @@
+/* custom-announcement-bar — rendered from the Shopify theme with the live settings (tools/render-section-css.js). */
+/* ── assets/custom-announcement-bar.css ── */
+.announcement-bar-section{position:relative;z-index:2;padding:5px 20px;text-align:center}.announcement-bar-section p{margin:0;letter-spacing:var(--letter-spacing-body);font-weight:var(--font-weight-regular)}[dir="rtl"].announcement-bar-section p{text-align:center}
+/* ── sections/custom-announcement-bar.liquid (rendered) ── */
+  .announcement-bar-section-product {
+      background: #000000 ;
+    background-image: none ;
+  }
+  .announcement-bar-section-product,
+  .announcement-bar-section-product * {
+    color: #ffffff ;
+    font-size: 14px;
+  }

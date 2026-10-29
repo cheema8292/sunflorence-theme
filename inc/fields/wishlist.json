@@ -1,0 +1,31 @@
+{
+ "label": "Wishlist page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_wishlist_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "My Collection"
+  },
+  {
+   "key": "field_sf_wishlist_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "My Wishlist"
+  },
+  {
+   "key": "field_sf_wishlist_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Your saved products, all in one place."
+  }
+ ]
+}

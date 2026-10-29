@@ -1,0 +1,138 @@
+/* Routine steps — converted from Shopify rr-routine-steps.liquid */
+
+.rr-rs {
+  background: var(--s-bg_color, #FAF7F2);
+  padding: calc(var(--s-padding_vertical, 96) * 1px) calc(var(--s-padding_horizontal, 32) * 1px);
+  font-family: 'Montserrat', var(--font-body-family), sans-serif;
+  color: var(--s-text_color, #22344a);
+}
+.rr-rs__inner { max-width: 1340px; margin: 0 auto; }
+
+.rr-rs__head { text-align: center; margin-bottom: 48px; }
+.rr-rs__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(28px, 3.2vw, 46px);
+  font-weight: 500;
+  color: var(--s-text_color, #22344a);
+  line-height: 1.1;
+  margin: 0 0 14px;
+  letter-spacing: -0.3px;
+}
+.rr-rs__subtext {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--s-text_color, #22344a);
+  opacity: 0.72;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.rr-rs__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.rr-rs__card {
+  position: relative;
+  aspect-ratio: 1 / 1.05;
+  border-radius: calc(var(--s-card_radius, 16) * 1px);
+  overflow: hidden;
+  cursor: pointer;
+  background: #eee;
+  opacity: 0.32;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s ease;
+}
+.rr-rs__card.is-active { opacity: 1; }
+.rr-rs__card:hover { opacity: 1; }
+
+.rr-rs__card-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.rr-rs__card-content {
+  position: absolute;
+  left: 28px; bottom: 28px; right: 28px;
+  z-index: 2;
+  color: #FFFFFF;
+}
+.rr-rs__card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px; font-weight: 700;
+  margin: 0 0 6px;
+  letter-spacing: 0.2px;
+  color:#FFFFFF!important;
+}
+.rr-rs__card-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.95;
+  max-width: 300px;
+}
+
+/* Step indicators (01 02 03) */
+.rr-rs__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: center;
+  position: relative;
+}
+.rr-rs__step {
+  display: flex; justify-content: center;
+  position: relative;
+}
+.rr-rs__step::before,
+.rr-rs__step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background: rgba(0,0,0,0.18);
+  z-index: 0;
+}
+.rr-rs__step::before { left: 0;  right: calc(50% + 28px); }
+.rr-rs__step::after  { right: 0; left:  calc(50% + 28px); }
+.rr-rs__step:first-child::before { display: none; }
+.rr-rs__step:last-child::after   { display: none; }
+
+.rr-rs__step-btn {
+  position: relative;
+  z-index: 1;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--s-bg_color, #FAF7F2);
+  border: 1.5px solid transparent;
+  color: var(--s-text_color, #22344a);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0.45;
+}
+.rr-rs__step.is-active .rr-rs__step-btn {
+  border-color: var(--s-text_color, #22344a);
+  opacity: 1;
+  font-weight: 700;
+}
+.rr-rs__step-btn:hover { opacity: 1; }
+
+@media (max-width: 768px) {
+  .rr-rs { padding: 56px 20px; }
+  .rr-rs__head { margin-bottom: 28px; }
+  .rr-rs__cards { grid-template-columns: 1fr; gap: 14px; margin-bottom: 22px; }
+  .rr-rs__card { aspect-ratio: 16 / 11; opacity: 1; }
+  .rr-rs__card-title { font-size: 15px; }
+  .rr-rs__card-desc { font-size: 12.5px; }
+  .rr-rs__steps { gap: 14px; }
+  .rr-rs__step-btn { width: 44px; height: 44px; font-size: 13px; }
+}

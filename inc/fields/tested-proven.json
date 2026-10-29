@@ -1,0 +1,251 @@
+{
+ "label": "Why shop with us (stats + spotlight)",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_tested-proven_msg_f9e488",
+   "name": "",
+   "label": "Left column",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_tested-proven_left_image",
+   "name": "left_image",
+   "label": "Small image (icon/swatch)",
+   "instructions": "",
+   "type": "image",
+   "return_format": "id",
+   "preview_size": "medium"
+  },
+  {
+   "key": "field_sf_tested-proven_left_heading",
+   "name": "left_heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Tested. Trusted. Proven."
+  },
+  {
+   "key": "field_sf_tested-proven_left_body",
+   "name": "left_body",
+   "label": "Body text",
+   "instructions": "",
+   "type": "wysiwyg",
+   "tabs": "all",
+   "toolbar": "basic",
+   "media_upload": 0,
+   "default_value": "<p>Our in-house team designs our formulas by first identifying real concerns and then optimising delivery systems that actually perform. We harness the power of biotechnology and potent botanicals to visibly transform the look of your hair.</p><p>Products are then subjected to rigorous clinical testing by third-party laboratories to validate real, measurable results — because we believe proof isn't optional; it's essential.</p>"
+  },
+  {
+   "key": "field_sf_tested-proven_left_text_color",
+   "name": "left_text_color",
+   "label": "Left text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_tested-proven_msg_f5b875",
+   "name": "",
+   "label": "Right column — image",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_tested-proven_right_image",
+   "name": "right_image",
+   "label": "Background image",
+   "instructions": "",
+   "type": "image",
+   "return_format": "id",
+   "preview_size": "medium"
+  },
+  {
+   "key": "field_sf_tested-proven_image_focus_x",
+   "name": "image_focus_x",
+   "label": "Image focus X",
+   "instructions": "",
+   "type": "number",
+   "default_value": 50,
+   "min": 0,
+   "max": 100,
+   "step": 5,
+   "append": "%"
+  },
+  {
+   "key": "field_sf_tested-proven_image_focus_y",
+   "name": "image_focus_y",
+   "label": "Image focus Y",
+   "instructions": "",
+   "type": "number",
+   "default_value": 50,
+   "min": 0,
+   "max": 100,
+   "step": 5,
+   "append": "%"
+  },
+  {
+   "key": "field_sf_tested-proven_overlay_color",
+   "name": "overlay_color",
+   "label": "Overlay colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#8a5a3b"
+  },
+  {
+   "key": "field_sf_tested-proven_overlay_opacity",
+   "name": "overlay_opacity",
+   "label": "Overlay opacity",
+   "instructions": "",
+   "type": "number",
+   "default_value": 0,
+   "min": 0,
+   "max": 80,
+   "step": 5,
+   "append": "%"
+  },
+  {
+   "key": "field_sf_tested-proven_msg_8de5ae",
+   "name": "",
+   "label": "Right column — content",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_tested-proven_right_heading",
+   "name": "right_heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Product spotlight"
+  },
+  {
+   "key": "field_sf_tested-proven_product_name",
+   "name": "product_name",
+   "label": "Product name",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Get-Dreamy"
+  },
+  {
+   "key": "field_sf_tested-proven_product_sub",
+   "name": "product_sub",
+   "label": "Product subtitle",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Overnight Toning Body Whip"
+  },
+  {
+   "key": "field_sf_tested-proven_footnote",
+   "name": "footnote",
+   "label": "Footnote",
+   "instructions": "",
+   "type": "text",
+   "default_value": "*Self-assessment on 30 participants after 56 days."
+  },
+  {
+   "key": "field_sf_tested-proven_right_text_color",
+   "name": "right_text_color",
+   "label": "Right text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_tested-proven_msg_ebd9be",
+   "name": "",
+   "label": "Layout",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_tested-proven_min_height",
+   "name": "min_height",
+   "label": "Section minimum height (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 640,
+   "min": 400,
+   "max": 900,
+   "step": 20,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_tested-proven_curve_radius",
+   "name": "curve_radius",
+   "label": "Bottom-right corner radius (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 120,
+   "min": 0,
+   "max": 220,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_tested-proven_section_bg",
+   "name": "section_bg",
+   "label": "Outer background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_tested-proven_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 48,
+   "min": 0,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_tested-proven_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 32,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_tested-proven_blocks_stat",
+   "name": "blocks_stat",
+   "label": "Stat rows",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add stat row",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_tested-proven_stat_number",
+     "name": "number",
+     "label": "Number (e.g. 90%)",
+     "instructions": "",
+     "type": "text",
+     "default_value": "90%"
+    },
+    {
+     "key": "field_sf_tested-proven_stat_text",
+     "name": "text",
+     "label": "Description",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Said their hair feels smoother."
+    }
+   ]
+  }
+ ]
+}

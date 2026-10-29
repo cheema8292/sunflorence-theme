@@ -1,0 +1,55 @@
+{
+ "label": "404 page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_404_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Page Not Found"
+  },
+  {
+   "key": "field_sf_404_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Oops, This Page"
+  },
+  {
+   "key": "field_sf_404_heading_italic",
+   "name": "heading_italic",
+   "label": "Heading italic",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Has Gone Missing"
+  },
+  {
+   "key": "field_sf_404_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "The page you were looking for has been moved, deleted, or never existed. Let us help you find your way back."
+  },
+  {
+   "key": "field_sf_404_btn_primary_text",
+   "name": "btn_primary_text",
+   "label": "Primary button",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Back to Home"
+  },
+  {
+   "key": "field_sf_404_btn_secondary_text",
+   "name": "btn_secondary_text",
+   "label": "Secondary button",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Shop All Products"
+  }
+ ]
+}

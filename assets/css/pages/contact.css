@@ -1,0 +1,159 @@
+/* Contact page — converted from Shopify rr-contact.liquid */
+
+.rr-contact { font-family: 'Montserrat', var(--font-body-family), sans-serif; }
+
+/* ── Hero ── */
+.rr-contact__hero {
+  background: #1b2a3c; padding: 100px 52px 88px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.rr-contact__hero::before {
+  content: ''; position: absolute; top: -180px; left: 50%; transform: translateX(-50%);
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(110,31,47,0.07) 0%, transparent 65%);
+  pointer-events: none;
+}
+.rr-contact__eyebrow {
+  font-size: 10px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase;
+  color: #6E1F2F; margin-bottom: 18px;
+}
+.rr-contact__hero-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(40px, 5.5vw, 64px); font-weight: 300;
+  color: #FFFFFF; line-height: 1.08; margin-bottom: 18px;
+}
+.rr-contact__hero-title em { font-style: italic; color: #D9B99B; }
+.rr-contact__hero-sub {
+  font-size: 14px; color: rgba(255,255,255,0.4);
+  max-width: 440px; margin: 0 auto; line-height: 1.85;
+}
+
+/* ── Body ── */
+.rr-contact__body {
+  background: var(--s-body_bg, #FAF6F2);
+  padding: 88px 52px 100px;
+}
+.rr-contact__body-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1.6fr; gap: 72px; align-items: start;
+}
+
+/* ── Left: info + trust ── */
+.rr-contact__sidebar {}
+
+.rr-contact__info-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px; font-weight: 400; color: #22344a;
+  line-height: 1.2; margin-bottom: 8px;
+}
+.rr-contact__info-sub {
+  font-size: 13px; color: #8A8A8A; line-height: 1.7; margin-bottom: 36px;
+}
+
+.rr-contact__info-cards { display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; }
+.rr-contact__info-card {
+  display: flex; align-items: flex-start; gap: 14px;
+  background: #FFFFFF; border: 1px solid #EDE8E0;
+  border-radius: 14px; padding: 18px 18px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+.rr-contact__info-card:hover { border-color: rgba(110,31,47,0.3); box-shadow: 0 4px 20px rgba(110,31,47,0.08); }
+.rr-contact__info-card-icon {
+  width: 40px; height: 40px; flex-shrink: 0; border-radius: 10px;
+  background: rgba(110,31,47,0.08); border: 1px solid rgba(110,31,47,0.15);
+  display: flex; align-items: center; justify-content: center;
+}
+.rr-contact__info-card-icon svg { width: 17px; height: 17px; stroke: #6E1F2F; fill: none; stroke-width: 1.8; }
+.rr-contact__info-label {
+  font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: #6E1F2F; margin-bottom: 3px;
+}
+.rr-contact__info-value { font-size: 13px; color: #22344a; line-height: 1.5; font-weight: 500; }
+.rr-contact__info-value a { color: #22344a; text-decoration: none; transition: color 0.2s; }
+.rr-contact__info-value a:hover { color: #6E1F2F; }
+
+/* Trust strip */
+.rr-contact__trust {
+  background: #1b2a3c; border-radius: 16px; padding: 24px 20px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.rr-contact__trust-item {
+  display: flex; align-items: center; gap: 10px;
+}
+.rr-contact__trust-icon { color: #6E1F2F; flex-shrink: 0; }
+.rr-contact__trust-icon svg { width: 14px; height: 14px; stroke: #6E1F2F; fill: none; stroke-width: 2; }
+.rr-contact__trust-text { font-size: 11.5px; color: rgba(255,255,255,0.5); }
+.rr-contact__trust-text strong { color: rgba(255,255,255,0.8); font-weight: 600; }
+
+/* ── Right: form ── */
+.rr-contact__form-wrap {
+  background: #FFFFFF; border: 1px solid #EDE8E0;
+  border-radius: 24px; padding: 48px 44px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.05);
+}
+.rr-contact__form-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px; font-weight: 400; color: #22344a;
+  margin-bottom: 6px;
+}
+.rr-contact__form-sub { font-size: 12px; color: #8A8A8A; margin-bottom: 32px; }
+
+.rr-contact__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.rr-contact__field { margin-bottom: 18px; }
+.rr-contact__label {
+  display: block; font-size: 10px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; color: #555; margin-bottom: 8px;
+}
+.rr-contact__input,
+.rr-contact__textarea,
+.rr-contact__select {
+  width: 100%; padding: 14px 16px;
+  border: 1.5px solid #E8E3DB; border-radius: 10px;
+  font-family: 'Montserrat', var(--font-body-family), sans-serif;
+  font-size: 13px; color: #22344a; background: #FAFAF8;
+  outline: none; transition: border-color 0.25s, background 0.25s;
+  box-sizing: border-box; appearance: none;
+}
+.rr-contact__input:focus,
+.rr-contact__textarea:focus,
+.rr-contact__select:focus { border-color: #6E1F2F; background: #FFFFFF; }
+.rr-contact__input::placeholder,
+.rr-contact__textarea::placeholder { color: #BBB; }
+.rr-contact__textarea { min-height: 130px; resize: vertical; }
+
+.rr-contact__submit {
+  width: 100%; padding: 16px;
+  background: #22344a; color: #fff; border: none; border-radius: 12px;
+  font-family: 'Montserrat', var(--font-body-family), sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase;
+  cursor: pointer; transition: all 0.3s;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  position: relative; overflow: hidden;
+  margin-top: 8px;
+}
+.rr-contact__submit::before {
+  content: ''; position: absolute; inset: 0;
+  background: #6E1F2F; transform: translateX(-101%);
+  transition: transform 0.35s ease; z-index: 0;
+}
+.rr-contact__submit:hover::before { transform: translateX(0); }
+.rr-contact__submit span { position: relative; z-index: 1; }
+.rr-contact__submit svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; position: relative; z-index: 1; }
+
+.rr-contact__success {
+  padding: 18px 20px; background: rgba(74,222,128,0.06);
+  border: 1px solid rgba(74,222,128,0.25); border-radius: 10px;
+  font-size: 13px; color: #22344a; margin-bottom: 24px;
+  display: flex; align-items: center; gap: 10px;
+}
+.rr-contact__success svg { width: 18px; height: 18px; stroke: #4ade80; fill: none; stroke-width: 2; flex-shrink: 0; }
+
+@media (max-width: 1024px) {
+  .rr-contact__body-inner { grid-template-columns: 1fr; gap: 48px; }
+}
+@media (max-width: 768px) {
+  .rr-contact__hero { padding: 72px 20px 64px; }
+  .rr-contact__body { padding: 56px 20px 72px; }
+  .rr-contact__form-wrap { padding: 32px 24px; }
+  .rr-contact__row { grid-template-columns: 1fr; }
+}

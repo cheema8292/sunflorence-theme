@@ -1,0 +1,14 @@
+/*
+Theme Name:   Sunflorence
+Theme URI:    https://www.sunflorence.com/
+Author:       Sunflorence LLC
+Description:  WooCommerce theme for Sunflorence — skin care, makeup, hair care, personal care and K-Beauty. Rebuilt from the Sunflorence Shopify theme: same sections, colours and layouts, with homepage sections editable in the WordPress admin (ACF).
+Version:      1.0.0
+Requires at least: 6.4
+Requires PHP: 8.0
+WC requires at least: 8.0
+License:      GPL-2.0-or-later
+Text Domain:  sunflorence
+*/
+
+/* The real styles live in assets/css/ (loaded by inc/enqueue.php). */

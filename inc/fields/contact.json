@@ -1,0 +1,95 @@
+{
+ "label": "Contact page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_contact_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "We'd Love to Hear From You"
+  },
+  {
+   "key": "field_sf_contact_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Contact"
+  },
+  {
+   "key": "field_sf_contact_heading_italic",
+   "name": "heading_italic",
+   "label": "Heading italic",
+   "instructions": "",
+   "type": "text",
+   "default_value": " Us"
+  },
+  {
+   "key": "field_sf_contact_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Our team is here to help. Reach out with any questions about your order, products, or anything else."
+  },
+  {
+   "key": "field_sf_contact_msg_dbeeb2",
+   "name": "",
+   "label": "Contact Info",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_contact_email",
+   "name": "email",
+   "label": "Email",
+   "instructions": "",
+   "type": "text",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_contact_hours",
+   "name": "hours",
+   "label": "Business hours",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Mon – Fri, 9am – 6pm EST"
+  },
+  {
+   "key": "field_sf_contact_response_time",
+   "name": "response_time",
+   "label": "Response time",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Within 24 hours"
+  },
+  {
+   "key": "field_sf_contact_msg_d359c6",
+   "name": "",
+   "label": "Form",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_contact_btn_text",
+   "name": "btn_text",
+   "label": "Submit button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Send Message"
+  },
+  {
+   "key": "field_sf_contact_body_bg",
+   "name": "body_bg",
+   "label": "Body background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FAF6F2"
+  }
+ ]
+}

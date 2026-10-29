@@ -1,0 +1,125 @@
+{
+ "label": "FAQ page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_faq_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Got Questions?"
+  },
+  {
+   "key": "field_sf_faq_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Frequently Asked"
+  },
+  {
+   "key": "field_sf_faq_heading_italic",
+   "name": "heading_italic",
+   "label": "Heading italic",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Questions"
+  },
+  {
+   "key": "field_sf_faq_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Everything you need to know about our products, shipping, and returns."
+  },
+  {
+   "key": "field_sf_faq_body_bg",
+   "name": "body_bg",
+   "label": "Body background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FAF6F2"
+  },
+  {
+   "key": "field_sf_faq_msg_e03be6",
+   "name": "",
+   "label": "CTA Block",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_faq_cta_show",
+   "name": "cta_show",
+   "label": "Show CTA block",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_faq_cta_sub",
+   "name": "cta_sub",
+   "label": "CTA subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Our team is available Mon–Fri, 9am–6pm EST. We respond within 24 hours."
+  },
+  {
+   "key": "field_sf_faq_cta_text",
+   "name": "cta_text",
+   "label": "CTA button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Contact Us"
+  },
+  {
+   "key": "field_sf_faq_cta_url",
+   "name": "cta_url",
+   "label": "CTA button URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_faq_blocks_faq",
+   "name": "blocks_faq",
+   "label": "FAQ Items",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add faq item",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_faq_faq_category",
+     "name": "category",
+     "label": "Category heading",
+     "instructions": "Shown above this question when it differs from the previous one.",
+     "type": "text"
+    },
+    {
+     "key": "field_sf_faq_faq_question",
+     "name": "question",
+     "label": "Question",
+     "instructions": "",
+     "type": "text",
+     "default_value": "What products does Sunflorence offer?"
+    },
+    {
+     "key": "field_sf_faq_faq_answer",
+     "name": "answer",
+     "label": "Answer",
+     "instructions": "",
+     "type": "textarea",
+     "rows": 3,
+     "default_value": "Our formulas combine centuries-old botanical wisdom with modern science, using only clean, clinically-tested ingredients."
+    }
+   ]
+  }
+ ]
+}

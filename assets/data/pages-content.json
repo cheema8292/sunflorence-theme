@@ -1,0 +1,95 @@
+{
+ "about": {
+  "hero_eyebrow": "Our Story",
+  "hero_heading": "Beauty & Care,",
+  "hero_heading_italic": "All In One Place.",
+  "hero_sub": "Sunflorence brings together skin care, makeup, hair care, personal care and K-Beauty favourites, handpicked to make your everyday routine simple and beautiful.",
+  "hero_bg": "#1b2a3c",
+  "mission_eyebrow": "Why We Exist",
+  "mission_heading": "Making Beauty",
+  "mission_heading_italic": " Easy To Love",
+  "mission_bg": "#FFFFFF",
+  "values_eyebrow": "What We Stand For",
+  "values_heading": "The Sunflorence",
+  "values_heading_italic": " Promise",
+  "blocks_mission_text": [
+   {
+    "text": "Sunflorence started with a simple idea: finding great beauty and personal care products shouldn't mean shopping in ten different places. We wanted one store where you could discover everything your routine needs."
+   },
+   {
+    "text": "From gentle facial cleansers and moisturizers to makeup brushes, complete makeup sets, shampoos, conditioners and oral care, every product in our collection is handpicked for quality and value. We also bring you the K-Beauty favourites loved around the world."
+   },
+   {
+    "text": "Today we ship to over 50 countries, with secure checkout, flexible payment and a 30-day return policy, because shopping for beauty should feel as good as using it."
+   }
+  ],
+  "blocks_value": [
+   {
+    "title": "Handpicked Quality",
+    "text": "Every product in our store is carefully selected so you can shop with confidence, from everyday essentials to premium sets."
+   },
+   {
+    "title": "Everything In One Place",
+    "text": "Skin care, makeup, hair care, personal care, K-Beauty and fashion: your full routine, one easy checkout."
+   },
+   {
+    "title": "Tracked Shipping",
+    "text": "Every order ships with tracking, so you can follow your delivery from our warehouse to your door."
+   },
+   {
+    "title": "30-Day Returns",
+    "text": "Not happy with your order? Return it within 30 days in its original condition. Simple and stress-free."
+   },
+   {
+    "title": "Secure & Flexible Payment",
+    "text": "100% secure transactions with all major credit cards, PayPal, Apple Pay and Google Pay."
+   },
+   {
+    "title": "24/7 Support",
+    "text": "Our dedicated team is here around the clock to help with any question about your order or our products."
+   }
+  ]
+ },
+ "contact": {},
+ "faq": {
+  "blocks_faq": [
+   {
+    "category": "About Our Products",
+    "question": "What products does Sunflorence offer?",
+    "answer": "We offer skin care, makeup, hair care, personal care and K-Beauty products, plus K-Vibes fashion. Everything is handpicked for quality and value."
+   },
+   {
+    "category": "About Our Products",
+    "question": "Can I modify my order after placing it?",
+    "answer": "Please contact us immediately if you need to modify your order. We'll do our best to accommodate changes before shipping."
+   },
+   {
+    "category": "Orders and Shipping",
+    "question": "How long does shipping take?",
+    "answer": "Standard shipping typically takes 5-7 business days. Express shipping options are available at checkout."
+   },
+   {
+    "category": "Orders and Shipping",
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship to over 50 countries worldwide. International shipping rates are calculated at checkout."
+   },
+   {
+    "category": "Orders and Shipping",
+    "question": "How can I track my order?",
+    "answer": "Once your order ships, you'll receive a tracking number via email. You can use this to monitor your delivery status, or visit our Track My Order page anytime."
+   },
+   {
+    "category": "Returns and Payment",
+    "question": "What is your return policy?",
+    "answer": "We offer a 30-day return policy on all items. Products must be in their original condition with tags attached."
+   },
+   {
+    "category": "Returns and Payment",
+    "question": "What payment methods do you accept?",
+    "answer": "We accept all major credit cards, PayPal, Apple Pay, and Google Pay for your convenience. All transactions are 100% secure."
+   }
+  ]
+ },
+ "track-order": {},
+ "wishlist": {}
+}

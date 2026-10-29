@@ -1,0 +1,281 @@
+{
+ "label": "Sets & Save (bundles)",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_bundles_msg_2ed7a2",
+   "name": "",
+   "label": "Section header",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_bundles_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Bundle & Save"
+  },
+  {
+   "key": "field_sf_bundles_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Enhance results & save more with our convenient and comprehensive bundles."
+  },
+  {
+   "key": "field_sf_bundles_heading_color",
+   "name": "heading_color",
+   "label": "Text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_bundles_msg_5606e9",
+   "name": "",
+   "label": "Shop All button",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_bundles_btn_text",
+   "name": "btn_text",
+   "label": "Button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Shop All"
+  },
+  {
+   "key": "field_sf_bundles_btn_url",
+   "name": "btn_url",
+   "label": "Button URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_bundles_btn_bg",
+   "name": "btn_bg",
+   "label": "Button background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_bundles_btn_color",
+   "name": "btn_color",
+   "label": "Button text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_bundles_msg_ebd9be",
+   "name": "",
+   "label": "Layout",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_bundles_columns",
+   "name": "columns",
+   "label": "Cards per row (desktop)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 4,
+   "min": 2,
+   "max": 4,
+   "step": 1,
+   "append": ""
+  },
+  {
+   "key": "field_sf_bundles_bg_color",
+   "name": "bg_color",
+   "label": "Section background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FAF7F2"
+  },
+  {
+   "key": "field_sf_bundles_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 96,
+   "min": 40,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_bundles_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 32,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_bundles_blocks_bundle",
+   "name": "blocks_bundle",
+   "label": "Bundle cards",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add bundle card",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_bundles_bundle_msg_a6ed29",
+     "name": "",
+     "label": "Image & link",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_bundles_bundle_image",
+     "name": "image",
+     "label": "Bundle image",
+     "instructions": "",
+     "type": "image",
+     "return_format": "id",
+     "preview_size": "medium"
+    },
+    {
+     "key": "field_sf_bundles_bundle_link",
+     "name": "link",
+     "label": "Link to bundle",
+     "instructions": "",
+     "type": "url",
+     "default_value": ""
+    },
+    {
+     "key": "field_sf_bundles_bundle_msg_454a5c",
+     "name": "",
+     "label": "Badge",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_bundles_bundle_badge_text",
+     "name": "badge_text",
+     "label": "Badge text",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Save 10%"
+    },
+    {
+     "key": "field_sf_bundles_bundle_badge_bg",
+     "name": "badge_bg",
+     "label": "Badge background",
+     "instructions": "",
+     "type": "color_picker",
+     "default_value": "#2b3f55"
+    },
+    {
+     "key": "field_sf_bundles_bundle_badge_color",
+     "name": "badge_color",
+     "label": "Badge text colour",
+     "instructions": "",
+     "type": "color_picker",
+     "default_value": "#FFFFFF"
+    },
+    {
+     "key": "field_sf_bundles_bundle_msg_9e1180",
+     "name": "",
+     "label": "Title & rating",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_bundles_bundle_title",
+     "name": "title",
+     "label": "Bundle title",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Best Sellers Bundle"
+    },
+    {
+     "key": "field_sf_bundles_bundle_rating",
+     "name": "rating",
+     "label": "Rating (1-5)",
+     "instructions": "",
+     "type": "text",
+     "default_value": "4.8"
+    },
+    {
+     "key": "field_sf_bundles_bundle_review_count",
+     "name": "review_count",
+     "label": "Review count",
+     "instructions": "",
+     "type": "text",
+     "default_value": "416"
+    },
+    {
+     "key": "field_sf_bundles_bundle_msg_e22ac2",
+     "name": "",
+     "label": "Pricing",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_bundles_bundle_price_original",
+     "name": "price_original",
+     "label": "Original price",
+     "instructions": "",
+     "type": "text",
+     "default_value": "$194.80"
+    },
+    {
+     "key": "field_sf_bundles_bundle_price_sale",
+     "name": "price_sale",
+     "label": "Sale price",
+     "instructions": "",
+     "type": "text",
+     "default_value": "$175.32"
+    },
+    {
+     "key": "field_sf_bundles_bundle_save_amount",
+     "name": "save_amount",
+     "label": "Savings (e.g. $19.48)",
+     "instructions": "",
+     "type": "text",
+     "default_value": "$19.48"
+    },
+    {
+     "key": "field_sf_bundles_bundle_msg_79ee94",
+     "name": "",
+     "label": "Included items",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_bundles_bundle_items",
+     "name": "items",
+     "label": "Items list (one per line)",
+     "instructions": "",
+     "type": "textarea",
+     "rows": 3,
+     "default_value": "Facial cleanser\nMoisturizer\nFacial treatment"
+    }
+   ]
+  }
+ ]
+}

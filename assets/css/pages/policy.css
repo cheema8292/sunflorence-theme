@@ -1,0 +1,54 @@
+/* Policy page — converted from Shopify rr-policy.liquid */
+
+.rr-policy { font-family: 'Jost', var(--font-body-family), sans-serif; }
+
+.rr-policy__hero {
+  background: #1b2a3c; padding: 90px 52px 80px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.rr-policy__hero::before {
+  content: ''; position: absolute; top: -120px; left: 50%; transform: translateX(-50%);
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(110,31,47,0.07) 0%, transparent 65%);
+  pointer-events: none;
+}
+.rr-policy__eyebrow {
+  font-size: 11px; font-weight: 500; letter-spacing: 3.5px; text-transform: uppercase;
+  color: #6E1F2F; margin-bottom: 14px;
+}
+.rr-policy__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(32px, 4.5vw, 52px); font-weight: 300;
+  color: #FFFFFF; line-height: 1.12; margin-bottom: 14px;
+}
+.rr-policy__updated {
+  font-size: 12px; color: rgba(255,255,255,0.3); letter-spacing: 0.5px;
+}
+
+.rr-policy__body {
+  background: #FAF6F2; padding: 96px 52px;
+}
+.rr-policy__inner {
+  max-width: 780px; margin: 0 auto;
+  background: #FFFFFF; border-radius: 20px; padding: 56px 60px;
+  border: 1px solid rgba(110,31,47,0.1);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.05);
+}
+.rr-policy__content { color: #444444; font-size: 14px; line-height: 1.9; }
+.rr-policy__content h2, .rr-policy__content h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400; color: #22344a; margin: 32px 0 12px;
+}
+.rr-policy__content h2 { font-size: 24px; }
+.rr-policy__content h3 { font-size: 19px; }
+.rr-policy__content p { margin-bottom: 16px; }
+.rr-policy__content ul, .rr-policy__content ol { padding-left: 22px; margin-bottom: 16px; }
+.rr-policy__content li { margin-bottom: 8px; }
+.rr-policy__content a { color: #6E1F2F; text-decoration: underline; text-underline-offset: 3px; }
+.rr-policy__content strong { font-weight: 600; color: #22344a; }
+
+@media (max-width: 768px) {
+  .rr-policy__hero { padding: 64px 20px; }
+  .rr-policy__body { padding: 48px 20px; }
+  .rr-policy__inner { padding: 32px 24px; }
+}

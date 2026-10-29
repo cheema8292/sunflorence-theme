@@ -1,0 +1,108 @@
+/* Image banner — converted from Shopify rr-image-banner.liquid */
+
+.rr-banner {
+  padding: calc(var(--s-padding_vertical, 48) * 1px) calc(var(--s-padding_horizontal, 32) * 1px);
+  background: var(--s-section_bg, #FFFFFF);
+  font-family: 'Montserrat', var(--font-body-family), sans-serif;
+}
+.rr-banner__inner {
+  max-width: 1340px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: calc(var(--s-corner_radius, 24) * 1px) calc(var(--s-corner_radius, 24) * 1px) calc(var(--s-corner_radius_br, 140) * 1px) calc(var(--s-corner_radius, 24) * 1px);
+  overflow: hidden;
+  min-height: calc(var(--s-banner_height, 680) * 1px);
+  display: flex;
+  align-items: var(--s-content_vertical, center);
+  justify-content: var(--s-content_horizontal, flex-start);
+}
+
+.rr-banner__img,
+.rr-banner__img-mobile {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: calc(var(--s-image_focus_x, 50) * 1%) calc(var(--s-image_focus_y, 50) * 1%);
+  z-index: 1;
+}
+.rr-banner__img-mobile { display: none; }
+
+.rr-banner__overlay {
+  position: absolute; inset: 0;
+  background: var(--s-overlay_color, #000000);
+  opacity: calc(var(--s-overlay_opacity, 15) * 0.01);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.rr-banner__content {
+  position: relative;
+  z-index: 3;
+  max-width: 560px;
+  padding: 56px;
+  color: var(--s-text_color, #FFFFFF);
+}
+
+.rr-banner__eyebrow {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 3px; text-transform: uppercase;
+  color: var(--s-text_color, #FFFFFF);
+  opacity: 0.85;
+  margin-bottom: 18px;
+}
+
+.rr-banner__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(36px, 4.6vw, 68px);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 0 0 22px;
+  color: var(--s-text_color, #FFFFFF);
+  letter-spacing: -0.5px;
+}
+.rr-banner__heading em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.rr-banner__subtext {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 32px;
+  color: var(--s-text_color, #FFFFFF);
+  opacity: 0.92;
+  max-width: 460px;
+}
+
+.rr-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--s-text_color, #FFFFFF);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid var(--s-text_color, #FFFFFF);
+  transition: opacity 0.25s;
+}
+.rr-banner__btn:hover { opacity: 0.7; }
+.rr-banner__btn svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+@media (max-width: 768px) {
+  .rr-banner { padding: 24px 16px; }
+  .rr-banner__inner {
+    min-height: calc(var(--s-banner_height_mobile, 520) * 1px);
+    align-items: flex-end;
+    justify-content: flex-start;
+    border-radius: calc(var(--s-corner_radius_mobile, 16) * 1px) calc(var(--s-corner_radius_mobile, 16) * 1px) calc(var(--s-corner_radius_br_mobile, 80) * 1px) calc(var(--s-corner_radius_mobile, 16) * 1px);
+  }
+  .rr-banner__content { padding: 28px 22px; max-width: 100%; }
+  .rr-banner__heading { font-size: clamp(28px, 8vw, 42px); margin-bottom: 14px; }
+  .rr-banner__subtext { font-size: 13.5px; margin-bottom: 22px; }
+  .rr-banner__btn { font-size: 11px; letter-spacing: 2px; }
+  
+    .rr-banner.has-mobile .rr-banner__img { display: none; }
+    .rr-banner.has-mobile .rr-banner__img-mobile { display: block; }
+  
+}

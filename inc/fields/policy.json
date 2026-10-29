@@ -1,0 +1,14 @@
+{
+ "label": "Policy page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_policy_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow label",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Legal"
+  }
+ ]
+}

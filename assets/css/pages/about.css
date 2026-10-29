@@ -1,0 +1,161 @@
+/* About page — converted from Shopify rr-about.liquid */
+
+.rr-about { font-family: 'Montserrat', var(--font-body-family), sans-serif; }
+
+/* ── Hero ── */
+.rr-about__hero {
+  background: var(--s-hero_bg, #1b2a3c);
+  padding: 120px 52px 100px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.rr-about__hero::before {
+  content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(110,31,47,0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+.rr-about__hero-eyebrow {
+  font-size: 10px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase;
+  color: #6E1F2F; margin-bottom: 20px;
+}
+.rr-about__hero-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(42px, 5.5vw, 68px); font-weight: 300;
+  color: #FFFFFF; line-height: 1.08; margin-bottom: 22px;
+}
+.rr-about__hero-title em { font-style: italic; color: #D9B99B; }
+.rr-about__hero-sub {
+  font-size: 14px; color: rgba(255,255,255,0.42);
+  max-width: 500px; margin: 0 auto 52px; line-height: 1.9;
+}
+
+/* Hero stats */
+.rr-about__hero-stats {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; max-width: 600px; margin: 0 auto;
+  border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;
+  overflow: hidden; background: rgba(255,255,255,0.03);
+}
+.rr-about__stat {
+  flex: 1; padding: 24px 20px; text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.07);
+}
+.rr-about__stat:last-child { border-right: none; }
+.rr-about__stat-num {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 32px; font-weight: 300; color: #D9B99B;
+  line-height: 1; margin-bottom: 4px;
+}
+.rr-about__stat-label { font-size: 9px; color: rgba(255,255,255,0.3); letter-spacing: 1.5px; text-transform: uppercase; }
+
+/* ── Mission / Story ── */
+.rr-about__mission {
+  background: var(--s-mission_bg, #FFFFFF);
+  padding: 104px 52px;
+}
+.rr-about__mission-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 5fr 6fr; gap: 88px; align-items: center;
+}
+.rr-about__mission-img {
+  aspect-ratio: 4/5; border-radius: 24px; overflow: hidden;
+  background: linear-gradient(150deg, #EDE7DF, #D4C5B0);
+  position: relative;
+}
+.rr-about__mission-img img { width: 100%; height: 100%; object-fit: cover; }
+.rr-about__mission-img-badge {
+  position: absolute; bottom: 28px; left: 28px;
+  background: rgba(255,255,255,0.95); border-radius: 14px;
+  padding: 16px 20px; backdrop-filter: blur(10px);
+}
+.rr-about__mission-img-badge-num {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px; font-weight: 300; color: #22344a; line-height: 1;
+}
+.rr-about__mission-img-badge-label { font-size: 9px; color: #8A8A8A; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 2px; }
+.rr-about__mission-eyebrow {
+  font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+  color: #6E1F2F; margin-bottom: 16px;
+}
+.rr-about__mission-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(32px, 3.5vw, 48px); font-weight: 300;
+  color: #22344a; line-height: 1.1; margin-bottom: 28px;
+}
+.rr-about__mission-title em { font-style: italic; color: #6E1F2F; }
+.rr-about__mission-text {
+  font-size: 13.5px; line-height: 1.95; color: #5A5A5A; margin-bottom: 20px;
+}
+.rr-about__mission-text:last-of-type { margin-bottom: 0; }
+
+/* ── Values ── */
+.rr-about__values {
+  background: #1b2a3c; padding: 104px 52px;
+}
+.rr-about__values-inner { max-width: 1200px; margin: 0 auto; }
+.rr-about__values-header { text-align: center; margin-bottom: 64px; }
+.rr-about__values-eyebrow {
+  font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+  color: #6E1F2F; margin-bottom: 14px;
+}
+.rr-about__values-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(30px, 3.5vw, 44px); font-weight: 300;
+  color: #FFFFFF;
+}
+.rr-about__values-title em { font-style: italic; color: #D9B99B; }
+
+.rr-about__values-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+}
+.rr-about__value-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 20px; padding: 36px 30px;
+  transition: all 0.35s; position: relative; overflow: hidden;
+}
+.rr-about__value-card::before {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, #6E1F2F, transparent);
+  opacity: 0; transition: opacity 0.35s;
+}
+.rr-about__value-card:hover { border-color: rgba(110,31,47,0.2); transform: translateY(-4px); background: rgba(110,31,47,0.04); }
+.rr-about__value-card:hover::before { opacity: 1; }
+.rr-about__value-num {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 48px; font-weight: 300; color: rgba(110,31,47,0.2);
+  line-height: 1; margin-bottom: 20px;
+}
+.rr-about__value-title {
+  font-size: 13px; font-weight: 700; color: #FFFFFF;
+  letter-spacing: 0.5px; margin-bottom: 10px;
+}
+.rr-about__value-text { font-size: 12.5px; color: rgba(255,255,255,0.38); line-height: 1.8; }
+
+/* ── Ingredients ribbon ── */
+.rr-about__ribbon {
+  background: #6E1F2F; padding: 40px 52px;
+  display: flex; align-items: center; justify-content: center;
+  gap: 60px; flex-wrap: wrap;
+}
+.rr-about__ribbon-item {
+  display: flex; align-items: center; gap: 12px;
+  color: #fff;
+}
+.rr-about__ribbon-item svg { width: 22px; height: 22px; stroke: rgba(255,255,255,0.7); fill: none; stroke-width: 1.5; }
+.rr-about__ribbon-item-text { font-size: 12px; font-weight: 600; letter-spacing: 1px; opacity: 0.9; }
+
+@media (max-width: 1024px) {
+  .rr-about__mission-inner { grid-template-columns: 1fr; gap: 48px; }
+  .rr-about__mission-img { aspect-ratio: 16/9; max-height: 400px; }
+  .rr-about__values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .rr-about__hero { padding: 80px 20px 72px; }
+  .rr-about__hero-stats { flex-direction: column; }
+  .rr-about__stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .rr-about__stat:last-child { border-bottom: none; }
+  .rr-about__mission { padding: 64px 20px; }
+  .rr-about__values { padding: 64px 20px; }
+  .rr-about__values-grid { grid-template-columns: 1fr; }
+  .rr-about__ribbon { padding: 32px 20px; gap: 24px; }
+}

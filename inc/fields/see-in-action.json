@@ -1,0 +1,271 @@
+{
+ "label": "See it in action (video reviews)",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_see-in-action_msg_2ed7a2",
+   "name": "",
+   "label": "Section header",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_see-in-action_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "See it in action"
+  },
+  {
+   "key": "field_sf_see-in-action_badge_text",
+   "name": "badge_text",
+   "label": "Instagram badge text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Over 3.4M Views On Instagram"
+  },
+  {
+   "key": "field_sf_see-in-action_badge_url",
+   "name": "badge_url",
+   "label": "Instagram URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_see-in-action_msg_c7150e",
+   "name": "",
+   "label": "Testimonial below",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_see-in-action_show_testimonial",
+   "name": "show_testimonial",
+   "label": "Show testimonial card",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_see-in-action_msg_fd4d72",
+   "name": "",
+   "label": "Colours & spacing",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_see-in-action_bg_color",
+   "name": "bg_color",
+   "label": "Background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_see-in-action_text_color",
+   "name": "text_color",
+   "label": "Text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_see-in-action_accent_color",
+   "name": "accent_color",
+   "label": "Active card border",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#8a5a3b"
+  },
+  {
+   "key": "field_sf_see-in-action_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 88,
+   "min": 40,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_see-in-action_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 32,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_see-in-action_blocks_video_card",
+   "name": "blocks_video_card",
+   "label": "Videos",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add video",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_see-in-action_video_card_msg_34e2d1",
+     "name": "",
+     "label": "Video",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_video_file",
+     "name": "video_file",
+     "label": "Upload video (preferred)",
+     "instructions": "",
+     "type": "file",
+     "return_format": "array",
+     "mime_types": "mp4,webm,mov"
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_video_url",
+     "name": "video_url",
+     "label": "Or YouTube / Vimeo URL",
+     "instructions": "",
+     "type": "url",
+     "default_value": ""
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_poster",
+     "name": "poster",
+     "label": "Poster image (thumbnail)",
+     "instructions": "",
+     "type": "image",
+     "return_format": "id",
+     "preview_size": "medium"
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_msg_8e58cd",
+     "name": "",
+     "label": "Reviewer",
+     "instructions": "",
+     "type": "message",
+     "message": ""
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_reviewer_name",
+     "name": "reviewer_name",
+     "label": "Reviewer name",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Lauren J."
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_reviewer_avatar",
+     "name": "reviewer_avatar",
+     "label": "Reviewer avatar",
+     "instructions": "",
+     "type": "image",
+     "return_format": "id",
+     "preview_size": "medium"
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_verified",
+     "name": "verified",
+     "label": "Verified buyer",
+     "instructions": "",
+     "type": "true_false",
+     "ui": 1,
+     "default_value": 1
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_rating",
+     "name": "rating",
+     "label": "Rating",
+     "instructions": "",
+     "type": "number",
+     "default_value": 5,
+     "min": 1,
+     "max": 5,
+     "step": 1,
+     "append": ""
+    },
+    {
+     "key": "field_sf_see-in-action_video_card_review_text",
+     "name": "review_text",
+     "label": "Review text",
+     "instructions": "",
+     "type": "textarea",
+     "rows": 3,
+     "default_value": "This product went above and beyond what I expected. The build and performance are top-tier, and you can feel the quality right away."
+    }
+   ]
+  },
+  {
+   "key": "field_sf_see-in-action_blocks_testimonial",
+   "name": "blocks_testimonial",
+   "label": "Testimonials",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add testimonial",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_see-in-action_testimonial_reviewer_name",
+     "name": "reviewer_name",
+     "label": "Reviewer name",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Lauren J."
+    },
+    {
+     "key": "field_sf_see-in-action_testimonial_reviewer_avatar",
+     "name": "reviewer_avatar",
+     "label": "Reviewer avatar",
+     "instructions": "",
+     "type": "image",
+     "return_format": "id",
+     "preview_size": "medium"
+    },
+    {
+     "key": "field_sf_see-in-action_testimonial_verified",
+     "name": "verified",
+     "label": "Verified buyer",
+     "instructions": "",
+     "type": "true_false",
+     "ui": 1,
+     "default_value": 1
+    },
+    {
+     "key": "field_sf_see-in-action_testimonial_rating",
+     "name": "rating",
+     "label": "Rating",
+     "instructions": "",
+     "type": "number",
+     "default_value": 5,
+     "min": 1,
+     "max": 5,
+     "step": 1,
+     "append": ""
+    },
+    {
+     "key": "field_sf_see-in-action_testimonial_review_text",
+     "name": "review_text",
+     "label": "Review text",
+     "instructions": "",
+     "type": "textarea",
+     "rows": 3,
+     "default_value": "This product went above and beyond what I expected. The quality is top-tier and you feel it right away."
+    }
+   ]
+  }
+ ]
+}

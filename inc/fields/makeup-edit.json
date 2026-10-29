@@ -1,0 +1,341 @@
+{
+ "label": "Makeup edit",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_makeup-edit_msg_010131",
+   "name": "",
+   "label": "Heading",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "The Makeup Edit"
+  },
+  {
+   "key": "field_sf_makeup-edit_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "Wrap a word in italics to colour it berry.",
+   "type": "text",
+   "default_value": "Glow, define & <em>express</em>"
+  },
+  {
+   "key": "field_sf_makeup-edit_subheading",
+   "name": "subheading",
+   "label": "Subheading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Lips, eyes and complexion favourites — curated shades for every skin tone, from soft everyday nudes to bold statement colour."
+  },
+  {
+   "key": "field_sf_makeup-edit_show_swatches",
+   "name": "show_swatches",
+   "label": "Show shade swatches",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_makeup-edit_swatch_1",
+   "name": "swatch_1",
+   "label": "Swatch 1",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#F4C7C3"
+  },
+  {
+   "key": "field_sf_makeup-edit_swatch_2",
+   "name": "swatch_2",
+   "label": "Swatch 2",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#E8A0A8"
+  },
+  {
+   "key": "field_sf_makeup-edit_swatch_3",
+   "name": "swatch_3",
+   "label": "Swatch 3",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#C9566E"
+  },
+  {
+   "key": "field_sf_makeup-edit_swatch_4",
+   "name": "swatch_4",
+   "label": "Swatch 4",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#8E2C48"
+  },
+  {
+   "key": "field_sf_makeup-edit_swatch_5",
+   "name": "swatch_5",
+   "label": "Swatch 5",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#C68E6E"
+  },
+  {
+   "key": "field_sf_makeup-edit_swatch_6",
+   "name": "swatch_6",
+   "label": "Swatch 6",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#E9CBB7"
+  },
+  {
+   "key": "field_sf_makeup-edit_msg_068f80",
+   "name": "",
+   "label": "Products",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_collection",
+   "name": "collection",
+   "label": "Makeup Category",
+   "instructions": "Used when no category tabs are added.",
+   "type": "taxonomy",
+   "taxonomy": "product_cat",
+   "field_type": "select",
+   "return_format": "id",
+   "allow_null": 1,
+   "add_term": 0
+  },
+  {
+   "key": "field_sf_makeup-edit_products_count",
+   "name": "products_count",
+   "label": "Products per tab",
+   "instructions": "",
+   "type": "number",
+   "default_value": 6,
+   "min": 2,
+   "max": 12,
+   "step": 1,
+   "append": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_columns",
+   "name": "columns",
+   "label": "Columns (desktop, with promo)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 3,
+   "min": 2,
+   "max": 4,
+   "step": 1,
+   "append": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_view_all_text",
+   "name": "view_all_text",
+   "label": "View all text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Shop all makeup"
+  },
+  {
+   "key": "field_sf_makeup-edit_view_all_url",
+   "name": "view_all_url",
+   "label": "View all link (fallback)",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_msg_07b1f8",
+   "name": "",
+   "label": "Promo panel",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_show_promo",
+   "name": "show_promo",
+   "label": "Show promo panel",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_makeup-edit_promo_image",
+   "name": "promo_image",
+   "label": "Image",
+   "instructions": "Portrait image works best. Without an image a rose-to-plum gradient is used.",
+   "type": "image",
+   "return_format": "id",
+   "preview_size": "medium"
+  },
+  {
+   "key": "field_sf_makeup-edit_promo_tag",
+   "name": "promo_tag",
+   "label": "Tag",
+   "instructions": "",
+   "type": "text",
+   "default_value": "New season"
+  },
+  {
+   "key": "field_sf_makeup-edit_promo_title",
+   "name": "promo_title",
+   "label": "Title",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Your signature look starts here"
+  },
+  {
+   "key": "field_sf_makeup-edit_promo_text",
+   "name": "promo_text",
+   "label": "Text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Long-wear lips, buildable blush and K-Beauty glow essentials."
+  },
+  {
+   "key": "field_sf_makeup-edit_promo_button",
+   "name": "promo_button",
+   "label": "Button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Shop makeup"
+  },
+  {
+   "key": "field_sf_makeup-edit_promo_url",
+   "name": "promo_url",
+   "label": "Button link",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_msg_7add29",
+   "name": "",
+   "label": "Colours",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_bg_color",
+   "name": "bg_color",
+   "label": "Background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FDF4F2"
+  },
+  {
+   "key": "field_sf_makeup-edit_blush_color",
+   "name": "blush_color",
+   "label": "Blush",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#F9E1E0"
+  },
+  {
+   "key": "field_sf_makeup-edit_rose_color",
+   "name": "rose_color",
+   "label": "Rose",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#E8A0A8"
+  },
+  {
+   "key": "field_sf_makeup-edit_berry_color",
+   "name": "berry_color",
+   "label": "Berry (accent)",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#A3324F"
+  },
+  {
+   "key": "field_sf_makeup-edit_plum_color",
+   "name": "plum_color",
+   "label": "Plum (text)",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#3B1424"
+  },
+  {
+   "key": "field_sf_makeup-edit_gold_color",
+   "name": "gold_color",
+   "label": "Gold",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#D4AF7A"
+  },
+  {
+   "key": "field_sf_makeup-edit_msg_627b24",
+   "name": "",
+   "label": "Spacing",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_makeup-edit_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 96,
+   "min": 32,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_makeup-edit_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 40,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_makeup-edit_blocks_tab",
+   "name": "blocks_tab",
+   "label": "Category tabs",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add category tab",
+   "max": 6,
+   "sub_fields": [
+    {
+     "key": "field_sf_makeup-edit_tab_collection",
+     "name": "collection",
+     "label": "Category",
+     "instructions": "The tab shows this collection's products live.",
+     "type": "taxonomy",
+     "taxonomy": "product_cat",
+     "field_type": "select",
+     "return_format": "id",
+     "allow_null": 1,
+     "add_term": 0
+    },
+    {
+     "key": "field_sf_makeup-edit_tab_label",
+     "name": "label",
+     "label": "Tab label (optional)",
+     "instructions": "Leave blank to use the collection name.",
+     "type": "text",
+     "default_value": ""
+    }
+   ]
+  }
+ ]
+}

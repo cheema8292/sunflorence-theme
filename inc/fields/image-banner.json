@@ -1,0 +1,295 @@
+{
+ "label": "Image banner",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_image-banner_msg_69ee1a",
+   "name": "",
+   "label": "Background image",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_image-banner_image",
+   "name": "image",
+   "label": "Desktop image",
+   "instructions": "",
+   "type": "image",
+   "return_format": "id",
+   "preview_size": "medium"
+  },
+  {
+   "key": "field_sf_image-banner_image_mobile",
+   "name": "image_mobile",
+   "label": "Mobile image (optional)",
+   "instructions": "",
+   "type": "image",
+   "return_format": "id",
+   "preview_size": "medium"
+  },
+  {
+   "key": "field_sf_image-banner_image_focus_x",
+   "name": "image_focus_x",
+   "label": "Image focus — horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 50,
+   "min": 0,
+   "max": 100,
+   "step": 5,
+   "append": "%"
+  },
+  {
+   "key": "field_sf_image-banner_image_focus_y",
+   "name": "image_focus_y",
+   "label": "Image focus — vertical",
+   "instructions": "",
+   "type": "number",
+   "default_value": 50,
+   "min": 0,
+   "max": 100,
+   "step": 5,
+   "append": "%"
+  },
+  {
+   "key": "field_sf_image-banner_msg_6b5513",
+   "name": "",
+   "label": "Overlay",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_image-banner_overlay_color",
+   "name": "overlay_color",
+   "label": "Overlay colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#000000"
+  },
+  {
+   "key": "field_sf_image-banner_overlay_opacity",
+   "name": "overlay_opacity",
+   "label": "Overlay opacity",
+   "instructions": "",
+   "type": "number",
+   "default_value": 15,
+   "min": 0,
+   "max": 80,
+   "step": 5,
+   "append": "%"
+  },
+  {
+   "key": "field_sf_image-banner_msg_f15c1c",
+   "name": "",
+   "label": "Content",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_image-banner_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow (small caps)",
+   "instructions": "",
+   "type": "text",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_image-banner_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Your body will get the attention it deserves"
+  },
+  {
+   "key": "field_sf_image-banner_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Confidence starts with how you feel. Our clinically proven formulas are designed to visibly nourish, strengthen and transform."
+  },
+  {
+   "key": "field_sf_image-banner_btn_text",
+   "name": "btn_text",
+   "label": "Button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Learn More"
+  },
+  {
+   "key": "field_sf_image-banner_btn_url",
+   "name": "btn_url",
+   "label": "Button URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_image-banner_text_color",
+   "name": "text_color",
+   "label": "Text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_image-banner_msg_8ade66",
+   "name": "",
+   "label": "Content position",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_image-banner_content_horizontal",
+   "name": "content_horizontal",
+   "label": "Horizontal alignment",
+   "instructions": "",
+   "type": "select",
+   "choices": {
+    "flex-start": "Left",
+    "center": "Centre",
+    "flex-end": "Right"
+   },
+   "default_value": "flex-start"
+  },
+  {
+   "key": "field_sf_image-banner_content_vertical",
+   "name": "content_vertical",
+   "label": "Vertical alignment",
+   "instructions": "",
+   "type": "select",
+   "choices": {
+    "flex-start": "Top",
+    "center": "Middle",
+    "flex-end": "Bottom"
+   },
+   "default_value": "center"
+  },
+  {
+   "key": "field_sf_image-banner_msg_ebd9be",
+   "name": "",
+   "label": "Layout",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_image-banner_banner_height",
+   "name": "banner_height",
+   "label": "Desktop height (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 680,
+   "min": 320,
+   "max": 900,
+   "step": 20,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_image-banner_banner_height_mobile",
+   "name": "banner_height_mobile",
+   "label": "Mobile height (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 520,
+   "min": 280,
+   "max": 700,
+   "step": 20,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_image-banner_corner_radius",
+   "name": "corner_radius",
+   "label": "Corner radius — other (desktop)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 24,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_image-banner_corner_radius_br",
+   "name": "corner_radius_br",
+   "label": "Corner radius — bottom right (desktop)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 140,
+   "min": 0,
+   "max": 240,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_image-banner_corner_radius_mobile",
+   "name": "corner_radius_mobile",
+   "label": "Corner radius — other (mobile)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 16,
+   "min": 0,
+   "max": 60,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_image-banner_corner_radius_br_mobile",
+   "name": "corner_radius_br_mobile",
+   "label": "Corner radius — bottom right (mobile)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 80,
+   "min": 0,
+   "max": 160,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_image-banner_msg_57b91b",
+   "name": "",
+   "label": "Section spacing",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_image-banner_section_bg",
+   "name": "section_bg",
+   "label": "Section background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_image-banner_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 48,
+   "min": 0,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_image-banner_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 32,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  }
+ ]
+}

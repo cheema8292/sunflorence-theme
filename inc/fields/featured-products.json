@@ -1,0 +1,95 @@
+{
+ "label": "Featured products (Deals of the Day)",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_featured-products_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Our Most Loved Products"
+  },
+  {
+   "key": "field_sf_featured-products_link_text",
+   "name": "link_text",
+   "label": "View all link text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "To All Products"
+  },
+  {
+   "key": "field_sf_featured-products_link_url",
+   "name": "link_url",
+   "label": "View all URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_featured-products_collection",
+   "name": "collection",
+   "label": "Category",
+   "instructions": "",
+   "type": "taxonomy",
+   "taxonomy": "product_cat",
+   "field_type": "select",
+   "return_format": "id",
+   "allow_null": 1,
+   "add_term": 0
+  },
+  {
+   "key": "field_sf_featured-products_products_count",
+   "name": "products_count",
+   "label": "Number of products",
+   "instructions": "",
+   "type": "number",
+   "default_value": 8,
+   "min": 4,
+   "max": 12,
+   "step": 1,
+   "append": ""
+  },
+  {
+   "key": "field_sf_featured-products_show_rating",
+   "name": "show_rating",
+   "label": "Show star rating",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_featured-products_bg_color",
+   "name": "bg_color",
+   "label": "Background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_featured-products_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 104,
+   "min": 40,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_featured-products_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 52,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  }
+ ]
+}

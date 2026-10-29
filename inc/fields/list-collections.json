@@ -1,0 +1,57 @@
+{
+ "label": "All categories page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_list-collections_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Our Range"
+  },
+  {
+   "key": "field_sf_list-collections_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Shop By"
+  },
+  {
+   "key": "field_sf_list-collections_heading_italic",
+   "name": "heading_italic",
+   "label": "Heading italic",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Collection"
+  },
+  {
+   "key": "field_sf_list-collections_subtext",
+   "name": "subtext",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Explore skin care, makeup, personal care, hair care, K-Beauty and more, all in one place."
+  },
+  {
+   "key": "field_sf_list-collections_show_featured",
+   "name": "show_featured",
+   "label": "First card full width",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_list-collections_show_shop_all",
+   "name": "show_shop_all",
+   "label": "Show Shop All button",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  }
+ ]
+}

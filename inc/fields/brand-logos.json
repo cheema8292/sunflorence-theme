@@ -1,0 +1,158 @@
+{
+ "label": "Brand logos (scrolling)",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_brand-logos_msg_6e213e",
+   "name": "",
+   "label": "",
+   "instructions": "",
+   "type": "message",
+   "message": "Scrolling logo strip with no background or heading. Upload a logo for each brand (transparent PNG or SVG works best). Until a logo is uploaded, the brand name is shown instead."
+  },
+  {
+   "key": "field_sf_brand-logos_logo_height",
+   "name": "logo_height",
+   "label": "Logo height (desktop)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 44,
+   "min": 20,
+   "max": 100,
+   "step": 2,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_brand-logos_logo_height_mobile",
+   "name": "logo_height_mobile",
+   "label": "Logo height (mobile)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 32,
+   "min": 16,
+   "max": 70,
+   "step": 2,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_brand-logos_gap",
+   "name": "gap",
+   "label": "Space between logos",
+   "instructions": "",
+   "type": "number",
+   "default_value": 80,
+   "min": 20,
+   "max": 160,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_brand-logos_speed",
+   "name": "speed",
+   "label": "Scroll duration (higher = slower)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 40,
+   "min": 10,
+   "max": 120,
+   "step": 2,
+   "append": "s"
+  },
+  {
+   "key": "field_sf_brand-logos_pause_on_hover",
+   "name": "pause_on_hover",
+   "label": "Pause on hover",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_brand-logos_grayscale",
+   "name": "grayscale",
+   "label": "Grey logos, full colour on hover",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 0
+  },
+  {
+   "key": "field_sf_brand-logos_fade_edges",
+   "name": "fade_edges",
+   "label": "Fade left and right edges",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_brand-logos_aria_label",
+   "name": "aria_label",
+   "label": "Accessible label",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Brands we carry"
+  },
+  {
+   "key": "field_sf_brand-logos_padding_top",
+   "name": "padding_top",
+   "label": "Padding top",
+   "instructions": "",
+   "type": "number",
+   "default_value": 40,
+   "min": 0,
+   "max": 120,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_brand-logos_padding_bottom",
+   "name": "padding_bottom",
+   "label": "Padding bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 40,
+   "min": 0,
+   "max": 120,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_brand-logos_blocks_brand",
+   "name": "blocks_brand",
+   "label": "Brands",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add brand",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_brand-logos_brand_name",
+     "name": "name",
+     "label": "Brand name",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Brand"
+    },
+    {
+     "key": "field_sf_brand-logos_brand_logo",
+     "name": "logo",
+     "label": "Logo",
+     "instructions": "",
+     "type": "image",
+     "return_format": "id",
+     "preview_size": "medium"
+    },
+    {
+     "key": "field_sf_brand-logos_brand_link",
+     "name": "link",
+     "label": "Link (optional)",
+     "instructions": "e.g. a collection with this brand's products",
+     "type": "url",
+     "default_value": ""
+    }
+   ]
+  }
+ ]
+}

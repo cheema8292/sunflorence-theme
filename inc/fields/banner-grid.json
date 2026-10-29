@@ -1,0 +1,22 @@
+{
+ "label": "Banner grid (category tiles / promo banners)",
+ "page": false,
+ "fields": [
+  { "key": "field_sf_banner-grid_layout", "name": "layout", "label": "Layout", "type": "select", "default_value": "tiles",
+    "choices": { "tiles": "Category tiles — 4 squares in a row (2×2 on mobile)", "split": "2 banners side by side", "wide": "1 full-width banner" } },
+  { "key": "field_sf_banner-grid_heading", "name": "heading", "label": "Heading (optional)", "type": "text" },
+  { "key": "field_sf_banner-grid_show_text", "name": "show_text", "label": "Show title/text on the images", "type": "true_false", "ui": 1, "default_value": 1,
+    "instructions": "Turn off when the banner images already contain their text (designed banners)." },
+  { "key": "field_sf_banner-grid_blocks_banner", "name": "blocks_banner", "label": "Banners", "type": "repeater", "layout": "block", "button_label": "Add banner",
+    "instructions": "Pick a category and the image, title and link are filled automatically (category image, else a product photo). Upload your own banner image to replace it.",
+    "sub_fields": [
+      { "key": "field_sf_banner-grid_banner_category", "name": "category", "label": "Category", "type": "taxonomy", "taxonomy": "product_cat", "field_type": "select", "allow_null": 1, "return_format": "id" },
+      { "key": "field_sf_banner-grid_banner_image", "name": "image", "label": "Image (desktop)", "type": "image", "return_format": "id", "preview_size": "medium" },
+      { "key": "field_sf_banner-grid_banner_image_mobile", "name": "image_mobile", "label": "Image (mobile, optional)", "type": "image", "return_format": "id", "preview_size": "medium" },
+      { "key": "field_sf_banner-grid_banner_title", "name": "title", "label": "Title (empty = category name)", "type": "text" },
+      { "key": "field_sf_banner-grid_banner_text", "name": "text", "label": "Small text", "type": "text" },
+      { "key": "field_sf_banner-grid_banner_button", "name": "button", "label": "Link text", "type": "text", "default_value": "Shop Now" },
+      { "key": "field_sf_banner-grid_banner_link", "name": "link", "label": "Link (empty = category page)", "type": "url" }
+    ] }
+ ]
+}

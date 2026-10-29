@@ -1,0 +1,35 @@
+{
+ "label": "Category page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_collection_eyebrow",
+   "name": "eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Collection"
+  },
+  {
+   "key": "field_sf_collection_products_per_page",
+   "name": "products_per_page",
+   "label": "Products per page",
+   "instructions": "",
+   "type": "number",
+   "default_value": 24,
+   "min": 8,
+   "max": 48,
+   "step": 4,
+   "append": ""
+  },
+  {
+   "key": "field_sf_collection_show_rating",
+   "name": "show_rating",
+   "label": "Show star rating",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+/* Featured products (Deals of the Day) — converted from Shopify rr-products.liquid */
+
+.rr-products {
+  background: var(--s-bg_color, #FFFFFF);
+  padding: calc(var(--s-padding_vertical, 104) * 1px) calc(var(--s-padding_horizontal, 52) * 1px);
+  font-family: 'Montserrat', var(--font-body-family), sans-serif;
+  overflow: hidden;
+}
+.rr-products__inner { max-width: 1300px; margin: 0 auto; }
+
+.rr-products__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  gap: 24px;
+}
+.rr-products__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(28px, 2.8vw, 42px);
+  font-weight: 400;
+  color: #22344a;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+}
+.rr-products__view-all {
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: #22344a; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  white-space: nowrap; flex-shrink: 0;
+  padding-bottom: 6px;
+  transition: opacity 0.2s;
+}
+.rr-products__view-all:hover { opacity: 0.55; }
+
+.rr-products__slider {
+  display: flex; gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none; -ms-overflow-style: none;
+  cursor: grab;
+}
+.rr-products__slider::-webkit-scrollbar { display: none; }
+.rr-products__slider.is-dragging { cursor: grabbing; scroll-behavior: auto; }
+
+.rr-products__slider .rr-prod-card {
+  flex: 0 0 calc((100% - 48px) / 3);
+  scroll-snap-align: start;
+}
+
+.rr-products__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 36px;
+  gap: 32px;
+}
+.rr-products .rr-products__progress-wrap {
+  flex: 1;
+  height: 3px;
+  background-color: rgba(0,0,0,0.18) !important;
+  background-image: none !important;
+  border-radius: 3px;
+  overflow: hidden;
+  display: block;
+}
+.rr-products .rr-products__progress-wrap .rr-products__progress-fill {
+  display: block;
+  height: 3px;
+  background-color: #22344a !important;
+  background-image: none !important;
+  border-radius: 3px;
+  width: 16%;
+  transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rr-products__nav { display: flex; gap: 10px; flex-shrink: 0; }
+.rr-products__nav-btn {
+  width: 46px; height: 46px; border-radius: 50%;
+  border: 1.5px solid rgba(0,0,0,0.18);
+  background: transparent; color: #22344a;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.25s;
+}
+.rr-products__nav-btn:hover { background: #22344a; color: #fff; border-color: #22344a; }
+.rr-products__nav-btn:disabled { opacity: 0.22; cursor: default; pointer-events: none; }
+.rr-products__nav-btn svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+
+@media (max-width: 1100px) {
+  .rr-products__slider .rr-prod-card { flex: 0 0 calc((100% - 24px) / 2.15); }
+}
+@media (max-width: 768px) {
+  .rr-products { padding: 56px 20px; }
+  .rr-products__header { gap: 12px; margin-bottom: 32px; align-items: flex-start; flex-direction: column; }
+  .rr-products__heading { font-size: clamp(24px, 6vw, 32px); }
+  .rr-products__view-all { font-size: 11px; padding-bottom: 0; }
+  .rr-products__slider { gap: 14px; }
+  .rr-products__slider .rr-prod-card { flex: 0 0 78vw; scroll-snap-align: center; }
+  .rr-products__footer { margin-top: 24px; gap: 16px; }
+  .rr-products__nav-btn { width: 40px; height: 40px; }
+}

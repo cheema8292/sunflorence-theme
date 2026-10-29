@@ -1,0 +1,186 @@
+{
+ "label": "About page",
+ "page": true,
+ "fields": [
+  {
+   "key": "field_sf_about_msg_e0a67c",
+   "name": "",
+   "label": "Hero",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_about_hero_eyebrow",
+   "name": "hero_eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Our Story"
+  },
+  {
+   "key": "field_sf_about_hero_heading",
+   "name": "hero_heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Beauty & Care,"
+  },
+  {
+   "key": "field_sf_about_hero_heading_italic",
+   "name": "hero_heading_italic",
+   "label": "Heading italic",
+   "instructions": "",
+   "type": "text",
+   "default_value": "All In One Place."
+  },
+  {
+   "key": "field_sf_about_hero_sub",
+   "name": "hero_sub",
+   "label": "Subtext",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Sunflorence brings together skin care, makeup, hair care, personal care and K-Beauty favourites, handpicked for your everyday routine."
+  },
+  {
+   "key": "field_sf_about_hero_bg",
+   "name": "hero_bg",
+   "label": "Hero background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#1b2a3c"
+  },
+  {
+   "key": "field_sf_about_msg_7a04ab",
+   "name": "",
+   "label": "Mission Section",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_about_mission_image",
+   "name": "mission_image",
+   "label": "Image",
+   "instructions": "",
+   "type": "image",
+   "return_format": "id",
+   "preview_size": "medium"
+  },
+  {
+   "key": "field_sf_about_mission_eyebrow",
+   "name": "mission_eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Our Mission"
+  },
+  {
+   "key": "field_sf_about_mission_heading",
+   "name": "mission_heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Rooted in Nature,"
+  },
+  {
+   "key": "field_sf_about_mission_heading_italic",
+   "name": "mission_heading_italic",
+   "label": "Heading italic",
+   "instructions": "",
+   "type": "text",
+   "default_value": " Backed by Science"
+  },
+  {
+   "key": "field_sf_about_mission_bg",
+   "name": "mission_bg",
+   "label": "Background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_about_msg_d13e84",
+   "name": "",
+   "label": "Values Section",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_about_values_eyebrow",
+   "name": "values_eyebrow",
+   "label": "Eyebrow",
+   "instructions": "",
+   "type": "text",
+   "default_value": "What We Stand For"
+  },
+  {
+   "key": "field_sf_about_values_heading",
+   "name": "values_heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Our Core"
+  },
+  {
+   "key": "field_sf_about_values_heading_italic",
+   "name": "values_heading_italic",
+   "label": "Heading italic",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Values"
+  },
+  {
+   "key": "field_sf_about_blocks_mission_text",
+   "name": "blocks_mission_text",
+   "label": "Mission paragraphs",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add mission paragraph",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_about_mission_text_text",
+     "name": "text",
+     "label": "Paragraph",
+     "instructions": "",
+     "type": "textarea",
+     "rows": 3,
+     "default_value": "We believe that every person deserves access to hair care that truly works without compromising on safety or sustainability."
+    }
+   ]
+  },
+  {
+   "key": "field_sf_about_blocks_value",
+   "name": "blocks_value",
+   "label": "Values",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add value",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_about_value_title",
+     "name": "title",
+     "label": "Title",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Clean Formulas"
+    },
+    {
+     "key": "field_sf_about_value_text",
+     "name": "text",
+     "label": "Description",
+     "instructions": "",
+     "type": "textarea",
+     "rows": 3,
+     "default_value": "Every ingredient is chosen for a reason. We never use sulfates, parabens, or synthetic fragrances."
+    }
+   ]
+  }
+ ]
+}

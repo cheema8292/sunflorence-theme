@@ -1,0 +1,184 @@
+{
+ "label": "FAQ accordion",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_faq-accordion_msg_010131",
+   "name": "",
+   "label": "Heading",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_faq-accordion_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Answers To Your Questions"
+  },
+  {
+   "key": "field_sf_faq-accordion_subtext",
+   "name": "subtext",
+   "label": "Subtext (optional)",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_faq-accordion_msg_1f07af",
+   "name": "",
+   "label": "Behaviour",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_faq-accordion_first_open",
+   "name": "first_open",
+   "label": "Open first FAQ by default",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 0
+  },
+  {
+   "key": "field_sf_faq-accordion_single_open",
+   "name": "single_open",
+   "label": "Only one FAQ open at a time",
+   "instructions": "",
+   "type": "true_false",
+   "ui": 1,
+   "default_value": 1
+  },
+  {
+   "key": "field_sf_faq-accordion_msg_3abe62",
+   "name": "",
+   "label": "Bottom CTA",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_faq-accordion_cta_text",
+   "name": "cta_text",
+   "label": "Helper text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Have more questions?"
+  },
+  {
+   "key": "field_sf_faq-accordion_btn_text",
+   "name": "btn_text",
+   "label": "Button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "See Our FAQs"
+  },
+  {
+   "key": "field_sf_faq-accordion_btn_url",
+   "name": "btn_url",
+   "label": "Button URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_faq-accordion_msg_fd4d72",
+   "name": "",
+   "label": "Colours & spacing",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_faq-accordion_bg_color",
+   "name": "bg_color",
+   "label": "Background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_faq-accordion_text_color",
+   "name": "text_color",
+   "label": "Text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_faq-accordion_btn_bg",
+   "name": "btn_bg",
+   "label": "Button background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_faq-accordion_btn_color",
+   "name": "btn_color",
+   "label": "Button text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_faq-accordion_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 96,
+   "min": 40,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_faq-accordion_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 32,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_faq-accordion_blocks_faq",
+   "name": "blocks_faq",
+   "label": "FAQ items",
+   "type": "repeater",
+   "layout": "block",
+   "collapsed": "",
+   "button_label": "Add faq item",
+   "max": 0,
+   "sub_fields": [
+    {
+     "key": "field_sf_faq-accordion_faq_question",
+     "name": "question",
+     "label": "Question",
+     "instructions": "",
+     "type": "text",
+     "default_value": "Your question here?"
+    },
+    {
+     "key": "field_sf_faq-accordion_faq_answer",
+     "name": "answer",
+     "label": "Answer",
+     "instructions": "",
+     "type": "wysiwyg",
+     "tabs": "all",
+     "toolbar": "basic",
+     "media_upload": 0,
+     "default_value": "<p>Your detailed answer goes here.</p>"
+    }
+   ]
+  }
+ ]
+}

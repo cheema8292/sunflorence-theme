@@ -1,0 +1,9 @@
+{
+ "fields": [
+  { "key": "field_sf_brand-logos_t_products", "label": "Products under the strip", "type": "accordion" },
+  { "key": "field_sf_brand-logos_show_products", "name": "show_products", "label": "Show products of these brands under the strip", "type": "true_false", "ui": 1, "default_value": 1 },
+  { "key": "field_sf_brand-logos_products_heading", "name": "products_heading", "label": "Heading (empty = none)", "type": "text", "default_value": "Shop By Brand" },
+  { "key": "field_sf_brand-logos_products_count", "name": "products_count", "label": "Number of products", "type": "number", "default_value": 4, "min": 2, "max": 8,
+    "instructions": "Products whose brand (Brands taxonomy or \"Brand\" attribute) or name matches a brand above." }
+ ]
+}

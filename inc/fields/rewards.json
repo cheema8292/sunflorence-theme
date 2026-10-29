@@ -1,0 +1,264 @@
+{
+ "label": "Rewards banner",
+ "page": false,
+ "fields": [
+  {
+   "key": "field_sf_rewards_msg_659b1e",
+   "name": "",
+   "label": "Left — image & badge",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_rewards_left_image",
+   "name": "left_image",
+   "label": "Background image",
+   "instructions": "",
+   "type": "image",
+   "return_format": "id",
+   "preview_size": "medium"
+  },
+  {
+   "key": "field_sf_rewards_image_focus_x",
+   "name": "image_focus_x",
+   "label": "Image focus X",
+   "instructions": "",
+   "type": "number",
+   "default_value": 50,
+   "min": 0,
+   "max": 100,
+   "step": 5,
+   "append": "%"
+  },
+  {
+   "key": "field_sf_rewards_image_focus_y",
+   "name": "image_focus_y",
+   "label": "Image focus Y",
+   "instructions": "",
+   "type": "number",
+   "default_value": 50,
+   "min": 0,
+   "max": 100,
+   "step": 5,
+   "append": "%"
+  },
+  {
+   "key": "field_sf_rewards_badge_top",
+   "name": "badge_top",
+   "label": "Badge top text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "My RADÉANT"
+  },
+  {
+   "key": "field_sf_rewards_badge_main",
+   "name": "badge_main",
+   "label": "Badge main text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Rewards"
+  },
+  {
+   "key": "field_sf_rewards_badge_text_color",
+   "name": "badge_text_color",
+   "label": "Badge text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_rewards_badge_border_color",
+   "name": "badge_border_color",
+   "label": "Badge border colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_rewards_left_corner_radius",
+   "name": "left_corner_radius",
+   "label": "Left corner radius — other (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 24,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_rewards_left_corner_radius_br",
+   "name": "left_corner_radius_br",
+   "label": "Left corner radius — bottom left (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 140,
+   "min": 0,
+   "max": 240,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_rewards_msg_44773f",
+   "name": "",
+   "label": "Right — content panel",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_rewards_right_bg",
+   "name": "right_bg",
+   "label": "Background colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#F8C4D2"
+  },
+  {
+   "key": "field_sf_rewards_right_text_color",
+   "name": "right_text_color",
+   "label": "Text colour",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_rewards_heading",
+   "name": "heading",
+   "label": "Heading",
+   "instructions": "",
+   "type": "text",
+   "default_value": "More perks, more often"
+  },
+  {
+   "key": "field_sf_rewards_body",
+   "name": "body",
+   "label": "Body text",
+   "instructions": "",
+   "type": "textarea",
+   "rows": 3,
+   "default_value": "Your beauty routine deserves to be rewarded. Shop, earn, redeem, repeat with My Radéant Rewards."
+  },
+  {
+   "key": "field_sf_rewards_right_corner_radius",
+   "name": "right_corner_radius",
+   "label": "Right panel corner radius (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 24,
+   "min": 0,
+   "max": 60,
+   "step": 4,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_rewards_msg_5b3ec1",
+   "name": "",
+   "label": "Buttons",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_rewards_btn1_text",
+   "name": "btn1_text",
+   "label": "Primary button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Learn More"
+  },
+  {
+   "key": "field_sf_rewards_btn1_url",
+   "name": "btn1_url",
+   "label": "Primary button URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_rewards_btn_bg",
+   "name": "btn_bg",
+   "label": "Primary button background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_rewards_btn_color",
+   "name": "btn_color",
+   "label": "Primary button text",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#22344a"
+  },
+  {
+   "key": "field_sf_rewards_btn2_text",
+   "name": "btn2_text",
+   "label": "Secondary button text",
+   "instructions": "",
+   "type": "text",
+   "default_value": "Sign In"
+  },
+  {
+   "key": "field_sf_rewards_btn2_url",
+   "name": "btn2_url",
+   "label": "Secondary button URL",
+   "instructions": "",
+   "type": "url",
+   "default_value": ""
+  },
+  {
+   "key": "field_sf_rewards_msg_ebd9be",
+   "name": "",
+   "label": "Layout",
+   "instructions": "",
+   "type": "message",
+   "message": ""
+  },
+  {
+   "key": "field_sf_rewards_min_height",
+   "name": "min_height",
+   "label": "Minimum height (px)",
+   "instructions": "",
+   "type": "number",
+   "default_value": 560,
+   "min": 380,
+   "max": 800,
+   "step": 20,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_rewards_section_bg",
+   "name": "section_bg",
+   "label": "Outer background",
+   "instructions": "",
+   "type": "color_picker",
+   "default_value": "#FFFFFF"
+  },
+  {
+   "key": "field_sf_rewards_padding_vertical",
+   "name": "padding_vertical",
+   "label": "Padding top/bottom",
+   "instructions": "",
+   "type": "number",
+   "default_value": 48,
+   "min": 0,
+   "max": 160,
+   "step": 8,
+   "append": "px"
+  },
+  {
+   "key": "field_sf_rewards_padding_horizontal",
+   "name": "padding_horizontal",
+   "label": "Padding horizontal",
+   "instructions": "",
+   "type": "number",
+   "default_value": 32,
+   "min": 0,
+   "max": 80,
+   "step": 4,
+   "append": "px"
+  }
+ ]
+}
