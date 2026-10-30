@@ -54,6 +54,7 @@ function sf_import_page() {
 		</ul>
 		<form method="post">
 			<?php wp_nonce_field( 'sf_import' ); ?>
+			<p><label><input type="checkbox" name="sf_cats" value="1" checked> <?php esc_html_e( 'Product categories (Skin Care › Cleansers, Makeup › Lips … — 20 categories)', 'sunflorence' ); ?></label></p>
 			<p><label><input type="checkbox" name="sf_home" value="1" checked> <?php esc_html_e( 'Homepage sections (creates a "Home" page and sets it as the front page if needed)', 'sunflorence' ); ?></label></p>
 			<p><label><input type="checkbox" name="sf_pages" value="1" checked> <?php esc_html_e( 'Pages: About, Contact, FAQ, Track order, Wishlist, All Categories', 'sunflorence' ); ?></label></p>
 			<p><button class="button button-primary" name="sf_import" value="1"><?php esc_html_e( 'Run', 'sunflorence' ); ?></button></p>
@@ -158,9 +159,8 @@ function sf_import_pages() {
 	$titles = array( 'about' => 'About', 'contact' => 'Contact', 'faq' => 'FAQ', 'track-order' => 'Track Order', 'wishlist' => 'Wishlist' );
 	$out    = array();
 	foreach ( $titles as $slug => $title ) {
-		if ( empty( $data[ $slug ] ) || empty( $defs[ $slug ] ) ) {
-			continue;
-		}
+		// pages whose Shopify texts are all defaults have no data → still create the page (texts = field defaults)
+		$data[ $slug ] = $data[ $slug ] ?? array();
 		$page = get_page_by_path( $slug );
 		$id   = $page ? $page->ID : wp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_title' => $title, 'post_name' => $slug ) );
 		update_post_meta( $id, '_wp_page_template', 'page-templates/template-' . $slug . '.php' );
@@ -169,7 +169,7 @@ function sf_import_pages() {
 			continue;
 		}
 		$missing = array();
-		foreach ( sf_import_map_values( $data[ $slug ], $defs[ $slug ]['fields'], $missing ) as $name => $v ) {
+		foreach ( sf_import_map_values( $data[ $slug ], $defs[ $slug ]['fields'] ?? array(), $missing ) as $name => $v ) {
 			$key = 'field_sf_' . $slug . '_' . $name;
 			if ( 0 === strpos( $name, 'blocks_' ) ) {
 				$key = 'field_sf_' . $slug . '_' . $name;
@@ -179,11 +179,10 @@ function sf_import_pages() {
 		$out[] = array( 'ok', sprintf( '%s page imported (%s).', $title, get_permalink( $id ) ) );
 	}
 	// "All categories" page (texts come from Sunflorence → Pages, so only the page + template)
-	if ( ! get_page_by_path( 'collections' ) ) {
-		$id = wp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'All Categories', 'post_name' => 'collections' ) );
-		update_post_meta( $id, '_wp_page_template', 'page-templates/template-list-collections.php' );
-		$out[] = array( 'ok', sprintf( 'All Categories page created (%s).', get_permalink( $id ) ) );
-	}
+	$cols = get_page_by_path( 'collections' );
+	$id   = $cols ? $cols->ID : wp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'All Categories', 'post_name' => 'collections' ) );
+	update_post_meta( $id, '_wp_page_template', 'page-templates/template-list-collections.php' );
+	$out[] = array( 'ok', sprintf( 'All Categories page ready (%s).', get_permalink( $id ) ) );
 	return $out ? $out : array( array( 'warn', 'No page content found.' ) );
 }
 
