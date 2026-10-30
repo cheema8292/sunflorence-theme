@@ -28,7 +28,7 @@
     "btn1_text": "Shop Skin Care",
     "btn1_url": "/collections/skin-care",
     "btn2_text": "",
-    "btn2_url": "/collections/mackups"
+    "btn2_url": "/collections/makeup"
    },
    {
     "bg_fallback": "#1b2a3c",
@@ -123,7 +123,7 @@
     "button": "Shop Now"
    },
    {
-    "category": "mackups",
+    "category": "makeup",
     "button": "Shop Now"
    },
    {
@@ -238,7 +238,7 @@
   "padding_horizontal": 40,
   "blocks_tab": [
    {
-    "collection": "mackups",
+    "collection": "makeup",
     "label": ""
    },
    {

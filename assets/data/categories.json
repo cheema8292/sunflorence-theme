@@ -1,0 +1,26 @@
+[
+ { "name": "Skin Care", "slug": "skin-care", "children": [
+  { "name": "Cleansers", "slug": "cleansers" },
+  { "name": "Facial Treatment", "slug": "facial-treatment" },
+  { "name": "Moisturizers", "slug": "moisturizers" },
+  { "name": "Body Care", "slug": "body-care" },
+  { "name": "Skin Concerns", "slug": "skin-concerns" }
+ ] },
+ { "name": "Makeup", "slug": "makeup", "children": [
+  { "name": "Face", "slug": "face" },
+  { "name": "Eyes", "slug": "eyes" },
+  { "name": "Lips", "slug": "lips" },
+  { "name": "Nails", "slug": "nails" }
+ ] },
+ { "name": "Hair Care", "slug": "hair-care", "children": [
+  { "name": "Shampoos & Conditioners", "slug": "shampoos-and-conditioners" },
+  { "name": "Hair Treatment", "slug": "hair-treatment" }
+ ] },
+ { "name": "Personal Care", "slug": "personal-care", "children": [
+  { "name": "Oral Care", "slug": "oral-care" },
+  { "name": "Hygiene", "slug": "hygiene" }
+ ] },
+ { "name": "K-Beauty", "slug": "k-beauty" },
+ { "name": "K-Vibes Fashion", "slug": "k-vibes-fashion" },
+ { "name": "Bundles", "slug": "bundles" }
+]

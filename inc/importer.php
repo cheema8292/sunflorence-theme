@@ -27,16 +27,15 @@ add_action( 'admin_menu', function () {
 function sf_import_page() {
 	$done = array();
 	if ( isset( $_POST['sf_import'] ) && check_admin_referer( 'sf_import' ) && current_user_can( 'manage_options' ) ) {
-		if ( ! function_exists( 'update_field' ) ) {
-			$done[] = array( 'error', __( 'ACF Pro is not active.', 'sunflorence' ) );
-		} else {
-			if ( ! empty( $_POST['sf_home'] ) ) {
-				$done[] = sf_import_home();
-			}
-			if ( ! empty( $_POST['sf_pages'] ) ) {
-				foreach ( sf_import_pages() as $r ) {
-					$done[] = $r;
-				}
+		if ( ! empty( $_POST['sf_cats'] ) ) {
+			$done[] = sf_import_categories();
+		}
+		if ( ! empty( $_POST['sf_home'] ) ) {
+			$done[] = sf_import_home();
+		}
+		if ( ! empty( $_POST['sf_pages'] ) ) {
+			foreach ( sf_import_pages() as $r ) {
+				$done[] = $r;
 			}
 		}
 	}
@@ -48,7 +47,8 @@ function sf_import_page() {
 		<?php endforeach; ?>
 		<p><?php esc_html_e( 'Copies the homepage sections and page texts from the Sunflorence Shopify theme into this site.', 'sunflorence' ); ?></p>
 		<ul style="list-style:disc;padding-left:20px">
-			<li><?php esc_html_e( 'Create the WooCommerce product categories first (same slugs as Shopify: skin-care, cleansers, mackups, lips …) so category sections are linked automatically.', 'sunflorence' ); ?></li>
+			<li><?php esc_html_e( 'Product categories are created with the slugs the homepage sections use (skin-care, cleansers, makeup, lips …). Existing categories are kept.', 'sunflorence' ); ?></li>
+			<li><?php esc_html_e( 'Without ACF the pages are still created; their texts then come from the theme files.', 'sunflorence' ); ?></li>
 			<li><?php esc_html_e( 'Images and videos are not copied (they are hosted on Shopify) — add them in each section afterwards.', 'sunflorence' ); ?></li>
 			<li><?php esc_html_e( 'Importing again replaces the homepage sections.', 'sunflorence' ); ?></li>
 		</ul>
@@ -56,7 +56,7 @@ function sf_import_page() {
 			<?php wp_nonce_field( 'sf_import' ); ?>
 			<p><label><input type="checkbox" name="sf_home" value="1" checked> <?php esc_html_e( 'Homepage sections (creates a "Home" page and sets it as the front page if needed)', 'sunflorence' ); ?></label></p>
 			<p><label><input type="checkbox" name="sf_pages" value="1" checked> <?php esc_html_e( 'Pages: About, Contact, FAQ, Track order, Wishlist, All Categories', 'sunflorence' ); ?></label></p>
-			<p><button class="button button-primary" name="sf_import" value="1"><?php esc_html_e( 'Import', 'sunflorence' ); ?></button></p>
+			<p><button class="button button-primary" name="sf_import" value="1"><?php esc_html_e( 'Run', 'sunflorence' ); ?></button></p>
 		</form>
 	</div>
 	<?php
@@ -126,6 +126,9 @@ function sf_import_home() {
 		update_option( 'show_on_front', 'page' );
 		update_option( 'page_on_front', $front );
 	}
+	if ( ! function_exists( 'update_field' ) ) {
+		return array( 'ok', 'Home page set as front page. Without ACF it shows the sections from assets/data/home-content.json.' );
+	}
 
 	$missing = array();
 	$value   = array();
@@ -161,6 +164,10 @@ function sf_import_pages() {
 		$page = get_page_by_path( $slug );
 		$id   = $page ? $page->ID : wp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_title' => $title, 'post_name' => $slug ) );
 		update_post_meta( $id, '_wp_page_template', 'page-templates/template-' . $slug . '.php' );
+		if ( ! function_exists( 'update_field' ) ) {
+			$out[] = array( 'ok', sprintf( '%s page ready (%s) — texts from the theme files.', $title, get_permalink( $id ) ) );
+			continue;
+		}
 		$missing = array();
 		foreach ( sf_import_map_values( $data[ $slug ], $defs[ $slug ]['fields'], $missing ) as $name => $v ) {
 			$key = 'field_sf_' . $slug . '_' . $name;
@@ -178,4 +185,40 @@ function sf_import_pages() {
 		$out[] = array( 'ok', sprintf( 'All Categories page created (%s).', get_permalink( $id ) ) );
 	}
 	return $out ? $out : array( array( 'warn', 'No page content found.' ) );
+}
+
+/**
+ * Product categories with the slugs the theme uses (assets/data/categories.json): main categories
+ * and their subcategories. Existing categories (same slug) are kept; a missing parent link is fixed.
+ */
+function sf_import_categories() {
+	if ( ! taxonomy_exists( 'product_cat' ) ) {
+		return array( 'error', 'WooCommerce is not active.' );
+	}
+	$tree    = sf_import_data( 'categories.json' );
+	$created = 0;
+	$kept    = 0;
+	$add     = function ( $cat, $parent ) use ( &$created, &$kept ) {
+		$t = get_term_by( 'slug', $cat['slug'], 'product_cat' );
+		if ( $t ) {
+			$kept++;
+			if ( (int) $t->parent !== (int) $parent ) {
+				wp_update_term( $t->term_id, 'product_cat', array( 'parent' => (int) $parent ) );
+			}
+			return (int) $t->term_id;
+		}
+		$r = wp_insert_term( $cat['name'], 'product_cat', array( 'slug' => $cat['slug'], 'parent' => (int) $parent ) );
+		if ( is_wp_error( $r ) ) {
+			return 0;
+		}
+		$created++;
+		return (int) $r['term_id'];
+	};
+	foreach ( $tree as $main ) {
+		$id = $add( $main, 0 );
+		foreach ( $main['children'] ?? array() as $child ) {
+			$add( $child, $id );
+		}
+	}
+	return array( 'ok', sprintf( 'Product categories: %d created, %d already there.', $created, $kept ) );
 }
