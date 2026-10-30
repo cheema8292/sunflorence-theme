@@ -19,7 +19,7 @@ get_header();
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class( 'sf-post-card' ); ?>>
 					<?php if ( has_post_thumbnail() ) : ?>
-						<a href="<?php the_permalink(); ?>" class="sf-post-card__img"><?php the_post_thumbnail( 'sf-card' ); ?></a>
+						<a href="<?php the_permalink(); ?>" class="sf-post-card__img"><?php the_post_thumbnail( 'woocommerce_thumbnail' ); ?></a>
 					<?php endif; ?>
 					<div class="sf-post-card__body">
 						<p class="sf-post-card__date"><?php echo esc_html( get_the_date() ); ?></p>

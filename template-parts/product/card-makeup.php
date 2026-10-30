@@ -15,7 +15,7 @@ $product = $args['product'] ?? null;
 
 if ( ! $product instanceof WC_Product ) : ?>
 	<div class="rr-mk-card">
-		<span class="rr-mk-card__media"><?php echo function_exists( 'wc_placeholder_img' ) ? wc_placeholder_img( 'sf-card' ) : ''; // phpcs:ignore ?></span>
+		<span class="rr-mk-card__media"><?php echo function_exists( 'wc_placeholder_img' ) ? wc_placeholder_img( 'woocommerce_thumbnail' ) : ''; // phpcs:ignore ?></span>
 		<div class="rr-mk-card__body">
 			<p class="rr-mk-card__vendor"><?php esc_html_e( 'Brand', 'sunflorence' ); ?></p>
 			<h3 class="rr-mk-card__title"><?php esc_html_e( 'Makeup product', 'sunflorence' ); ?></h3>
@@ -59,12 +59,12 @@ foreach ( $product->get_attributes() as $attr ) {
 		<?php endif; ?>
 		<?php
 		if ( $img1 ) {
-			echo wp_get_attachment_image( $img1, 'sf-card', false, array( 'class' => 'rr-mk-card__img-1', 'loading' => 'lazy', 'alt' => $title, 'sizes' => '(max-width: 768px) 50vw, 22vw' ) ); // phpcs:ignore
+			echo wp_get_attachment_image( $img1, 'woocommerce_thumbnail', false, array( 'class' => 'rr-mk-card__img-1', 'loading' => 'lazy', 'alt' => $title, 'sizes' => '(max-width: 768px) 50vw, 22vw' ) ); // phpcs:ignore
 			if ( $img2 ) {
-				echo wp_get_attachment_image( $img2, 'sf-card', false, array( 'class' => 'rr-mk-card__img-2', 'loading' => 'lazy', 'alt' => '', 'sizes' => '(max-width: 768px) 50vw, 22vw' ) ); // phpcs:ignore
+				echo wp_get_attachment_image( $img2, 'woocommerce_thumbnail', false, array( 'class' => 'rr-mk-card__img-2', 'loading' => 'lazy', 'alt' => '', 'sizes' => '(max-width: 768px) 50vw, 22vw' ) ); // phpcs:ignore
 			}
 		} elseif ( function_exists( 'wc_placeholder_img' ) ) {
-			echo wc_placeholder_img( 'sf-card' ); // phpcs:ignore
+			echo wc_placeholder_img( 'woocommerce_thumbnail' ); // phpcs:ignore
 		}
 		?>
 	</a>

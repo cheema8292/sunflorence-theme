@@ -33,7 +33,7 @@ $style = sf_vars( array( 'heading_color', 'btn_bg', 'btn_color', 'columns', 'bg_
 					<?php if ( sf_row( $b, 'badge_text' ) ) : ?>
 						<span class="rr-bcard__badge" style="background:<?php echo esc_attr( sf_color( sf_row( $b, 'badge_bg' ), '#2b3f55' ) ); ?>;color:<?php echo esc_attr( sf_color( sf_row( $b, 'badge_color' ), '#FFFFFF' ) ); ?>"><?php echo esc_html( sf_row( $b, 'badge_text' ) ); ?></span>
 					<?php endif; ?>
-					<div class="rr-bcard__img-wrap"><?php echo sf_img( sf_row( $b, 'image' ), 'sf-card', array( 'loading' => 'lazy', 'alt' => sf_row( $b, 'title' ) ) ); // phpcs:ignore ?></div>
+					<div class="rr-bcard__img-wrap"><?php echo sf_img( sf_row( $b, 'image' ), 'woocommerce_thumbnail', array( 'loading' => 'lazy', 'alt' => sf_row( $b, 'title' ) ) ); // phpcs:ignore ?></div>
 
 					<?php if ( sf_row( $b, 'rating' ) && (float) sf_row( $b, 'rating' ) > 0 ) : ?>
 						<?php $filled = (int) round( (float) sf_row( $b, 'rating' ) ); ?>

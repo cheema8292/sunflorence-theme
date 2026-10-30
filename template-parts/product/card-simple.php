@@ -32,7 +32,7 @@ $badge = $pct ? '-' . $pct . '%' : ( has_term( 'new', 'product_tag', $product->g
 <a href="<?php echo esc_url( $product->get_permalink() ); ?>" class="rr-prod-card">
 	<div class="rr-prod-card__img-wrap">
 		<?php if ( $badge ) : ?><span class="rr-prod-badge<?php echo $pct ? '' : ' rr-prod-badge--new'; ?>"><?php echo esc_html( $badge ); ?></span><?php endif; ?>
-		<?php echo $product->get_image( 'sf-card', array( 'loading' => 'lazy', 'alt' => $product->get_name() ) ); // phpcs:ignore ?>
+		<?php echo $product->get_image( 'woocommerce_thumbnail', array( 'loading' => 'lazy', 'alt' => $product->get_name() ) ); // phpcs:ignore ?>
 	</div>
 	<div class="rr-prod-card__body">
 		<?php if ( $cat_name ) : ?><span class="rr-prod-card__cat"><?php echo esc_html( $cat_name ); ?></span><?php endif; ?>

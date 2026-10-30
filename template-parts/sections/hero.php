@@ -29,7 +29,7 @@ $radius = (int) ( $demo ? 120 : sf_s( 'curve_radius', 80 ) );
 				<div class="rr-hero__slide<?php echo 0 === $n ? ' active' : ''; ?>" style="background-color: <?php echo esc_attr( sf_color( sf_row( $s, 'bg_fallback' ), '#1b2a3c' ) ); ?>; --rr-hero-pos: <?php echo esc_attr( (int) sf_row( $s, 'focus_x', 50 ) ); ?>% <?php echo esc_attr( (int) sf_row( $s, 'focus_y', 50 ) ); ?>%;">
 					<?php
 					if ( sf_row( $s, 'image' ) ) {
-						echo sf_img( sf_row( $s, 'image' ), 'sf-hero', array( // phpcs:ignore
+						echo sf_img( sf_row( $s, 'image' ), '2048x2048', array( // phpcs:ignore
 							'class'         => 'rr-hero__slide-img',
 							'loading'       => 0 === $n ? 'eager' : 'lazy',
 							'fetchpriority' => 0 === $n ? 'high' : 'auto',

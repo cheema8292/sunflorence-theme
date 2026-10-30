@@ -48,12 +48,12 @@ $in      = $product->is_in_stock();
 		<span class="rr-cs-card__num"><?php echo esc_html( $num ); ?></span>
 		<?php
 		if ( $img1 ) {
-			echo wp_get_attachment_image( $img1, 'sf-card', false, array( 'class' => 'rr-cs-card__img-1', 'loading' => 'lazy', 'alt' => $title, 'sizes' => '(max-width: 768px) 50vw, 25vw' ) ); // phpcs:ignore
+			echo wp_get_attachment_image( $img1, 'woocommerce_thumbnail', false, array( 'class' => 'rr-cs-card__img-1', 'loading' => 'lazy', 'alt' => $title, 'sizes' => '(max-width: 768px) 50vw, 25vw' ) ); // phpcs:ignore
 			if ( $img2 ) {
-				echo wp_get_attachment_image( $img2, 'sf-card', false, array( 'class' => 'rr-cs-card__img-2', 'loading' => 'lazy', 'alt' => '', 'sizes' => '(max-width: 768px) 50vw, 25vw' ) ); // phpcs:ignore
+				echo wp_get_attachment_image( $img2, 'woocommerce_thumbnail', false, array( 'class' => 'rr-cs-card__img-2', 'loading' => 'lazy', 'alt' => '', 'sizes' => '(max-width: 768px) 50vw, 25vw' ) ); // phpcs:ignore
 			}
 		} elseif ( function_exists( 'wc_placeholder_img' ) ) {
-			echo wc_placeholder_img( 'sf-card', array( 'class' => 'rr-cs-card__img-1' ) ); // phpcs:ignore
+			echo wc_placeholder_img( 'woocommerce_thumbnail', array( 'class' => 'rr-cs-card__img-1' ) ); // phpcs:ignore
 		}
 		?>
 	</a>

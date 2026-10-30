@@ -29,8 +29,8 @@ add_action( 'after_setup_theme', function () {
 		'footer-menu' => __( 'Footer — Customer Care', 'sunflorence' ),
 	) );
 
-	add_image_size( 'sf-card', 700, 700, false );
-	add_image_size( 'sf-hero', 2000, 1200, false );
+	// No extra image sizes: WordPress would create them for every product photo DSers pushes (slow on shared hosting).
+	// Cards use WooCommerce's "woocommerce_thumbnail" (600px), the hero uses the core "2048x2048" size.
 } );
 
 /** Body class so the header knows whether a hero sits under it. */
